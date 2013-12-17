@@ -36,12 +36,16 @@ module.exports = function (grunt) {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
                 tasks: ['copy:styles', 'autoprefixer']
             },
+            scripts: {
+                files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+                tasks: ['copy:scripts', 'autoprefixer']
+            },
             livereload: {
                 options: {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= yeoman.app %>/*.html',
+                    '<%= yeoman.app %>/{,*/}*.html',
                     '.tmp/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
@@ -120,7 +124,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= yeoman.app %>/scripts',
                     src: '{,*/}*.{coffee,litcoffee,coffee.md}',
-                    dest: '.tmp/scripts',
+                    dest: '<%= yeoman.app %>/scripts',
                     ext: '.min.js'
                 }]
             },
@@ -301,6 +305,13 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+            scripts: {
+                expand: true,
+                dot: true,
+                cwd: '<%= yeoman.app %>/scripts',
+                dest: '.tmp/scripts/',
+                src: '{,*/}*.js'
             }
         },
         modernizr: {
@@ -325,7 +336,6 @@ module.exports = function (grunt) {
             dist: [
                 'coffee',
                 'sass',
-                'copy:styles',
                 'imagemin',
                 'svgmin',
                 'htmlmin'
@@ -342,6 +352,7 @@ module.exports = function (grunt) {
             'clean:server',
             'concurrent:server',
             'copy:styles',
+            'copy:scripts',
             'autoprefixer',
             'connect:livereload',
             'watch'
@@ -365,6 +376,8 @@ module.exports = function (grunt) {
         'clean:dist',
         'useminPrepare',
         'concurrent:dist',
+        'copy:styles',
+        'copy:scripts',
         'autoprefixer',
         'concat',
         'cssmin',

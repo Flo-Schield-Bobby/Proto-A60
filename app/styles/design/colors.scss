@@ -1,0 +1,10 @@
+// Base colors
+$white: rgb(255, 255, 255);
+$peter-river: rgb(52, 152, 219);
+$wet-asphalt: rgb(52, 73, 94);
+
+// App real colors
+$app-content-text: $white;
+$app-content-background: transparentize($peter-river, 2/3);
+$app-bars-text: $white;
+$app-bars-background: transparentize($wet-asphalt, 1/10);
