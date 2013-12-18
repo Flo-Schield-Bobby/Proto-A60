@@ -264,15 +264,15 @@ module.exports = function (grunt) {
         htmlmin: {
             dist: {
                 options: {
-                    /*removeCommentsFromCDATA: true,
-                    // https://github.com/yeoman/grunt-usemin/issues/44
-                    //collapseWhitespace: true,
+                    removeCommentsFromCDATA: true,
+                    //https://github.com/yeoman/grunt-usemin/issues/44
+                    collapseWhitespace: false,
                     collapseBooleanAttributes: true,
-                    removeAttributeQuotes: true,
+                    removeAttributeQuotes: false,
                     removeRedundantAttributes: true,
                     useShortDoctype: true,
                     removeEmptyAttributes: true,
-                    removeOptionalTags: true*/
+                    removeOptionalTags: false
                 },
                 files: [{
                     expand: true,
@@ -313,6 +313,13 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/scripts',
                 dest: '.tmp/scripts/',
                 src: '{,*/}*.js'
+            },
+            sounds: {
+                expand: true,
+                dot: true,
+                cwd: '<%= yeoman.app %>/sounds',
+                dest: '.tmp/sounds/',
+                src: '{,*/}*.{mp3,wav,ogg}'
             }
         },
         modernizr: {
@@ -354,6 +361,7 @@ module.exports = function (grunt) {
             'concurrent:server',
             'copy:styles',
             'copy:scripts',
+            'copy:sounds',
             'autoprefixer',
             'connect:livereload',
             'watch'
@@ -379,6 +387,7 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'copy:styles',
         'copy:scripts',
+        'copy:sounds',
         'autoprefixer',
         'concat',
         'cssmin',
