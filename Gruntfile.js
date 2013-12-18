@@ -325,6 +325,23 @@ module.exports = function (grunt) {
         modernizr: {
             devFile: '<%= yeoman.app %>/components/modernizr/modernizr.js',
             outputFile: '<%= yeoman.dist %>/components/modernizr/modernizr.js',
+            extra: {
+                'shiv' : true,
+                'printshiv' : false,
+                'load' : true,
+                'mq' : false,
+                'cssclasses' : true
+            },
+            extensibility: {
+                'addtest': true,
+                'prefixed': false,
+                'teststyles': false,
+                'testprops': false,
+                'testallprops': false,
+                'hasevents': false,
+                'prefixes': false,
+                'domprefixes': false
+            },
             files: [
                 '<%= yeoman.dist %>/scripts/{,*/}*.js',
                 '<%= yeoman.dist %>/styles/{,*/}*.css',
@@ -359,6 +376,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
+            'modernizr',
             'copy:styles',
             'copy:scripts',
             'copy:sounds',

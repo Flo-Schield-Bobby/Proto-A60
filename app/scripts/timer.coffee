@@ -60,7 +60,7 @@ $ ->
 	__timer__ = new Timer {
 		timerLabelId: 'app-timer',
 		callbacks: {
-			10: {
+			15: {
 				'params': [__sounds__],
 				'execute': (sounds) ->
 					sounds.alert.play()
