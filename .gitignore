@@ -1,8 +1,14 @@
+# Base cache files and dependencies
 node_modules
 dist
 .tmp
 .sass-cache
 app/components
+
+# Mac OS files
 *.DS_Store
+
+# Audacity files
 *.aup
-*_data/*
+*.au
+*_data*
