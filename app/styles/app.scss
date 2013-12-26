@@ -49,6 +49,7 @@ html {
             text-align: center;
             color: $white;
             font-weight: 200;
+            overflow:hidden;
         }
         #app-content {
             padding: 20px 0;
@@ -58,6 +59,23 @@ html {
             }
             #qr-code-canvas {
                 display: none;
+            }
+            .white {
+                overflow:hidden;
+                background-color:#FFF;
+                @include border-top-radius(10px);
+                @include border-bottom-radius(10px);
+            }
+            .col-lg-10 {
+                @extend .col-lg-offset-1;
+                @extend .white;
+                margin-bottom:20px;
+                p:first-child {
+                    margin:10px 0 20px;
+                }
+            }
+            h4, .btn {
+                @extend .col-lg-offset-1;
             }
         }
     }

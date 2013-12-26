@@ -23,53 +23,71 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar'>
-                <h5><a href='/pages/scan.html' class='btn btn-default pull-left'>Scan</a></h5>
+                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
             </header>
             <section id='app-content'>
-                <h6 class='block-centered'>Temps d'intervention</h6>
-                <h2 class='block-centered' id='app-timer'>00:00</h2>
+                <h2 class='block-centered'>Profil du bénéficiaire</h6>
+                <h4>Coordonnées du bénificiaire</h2>
                 <div class='row'>
-                    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
-                        <div class='link-wrapper'>
-                            <a href='/pages/mission.html' class='btn btn-default btn-lg'><i class='glyphicon glyphicon-th-list'></i></a>
-                        </div>
+                    <div class='col-lg-10'>
+                        <p>Monique GIRARD</p>
+                        <p>5 rue Senlis, Appt 12 <br/>
+                        60200 COMPIEGNE</p>
                     </div>
-                    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
-                        <div class='link-wrapper'>
-                            <a href='#modal-book' data-toggle='modal' class='btn btn-default btn-lg'><i class='glyphicon glyphicon-book'></i></a>
-                        </div>
                 </div>
-                <div class='link-wrapper'>
-                    <a href='/index.html' class='btn btn-danger btn-lg'>Terminer l'intervention</a>
+                <h4 >Adresses utiles</h2>
+                <div class="row">
+                    <div class='col-lg-10'>
+                        <p>Médecin traitant</p>
+                        <p>Dr Valérie COCHOIS<br/>
+                        03.44.08.90.36</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='col-lg-10'>
+                        <p>Infirmière</p>
+                        <p>Thérèse VAUGIRARD<br/>
+                        03.44.08.95.36</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='col-lg-10'>
+                        <p>Personne référente dans la famille</p>
+                        <p>Jeanne VAUGIRARD<br/>
+                        03.53.18.93.36</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='col-lg-10'>
+                        <p>Voisins / Amis</p>
+                        <p>Claudette BASTIEN<br/>
+                        03.44.28.89.26</p>
+                    </div>
+                </div>
+                <h4>Prise en charge</h2>
+                <div class="row">
+                    <div class='col-lg-2 white col-lg-offset-1'>
+                        <p>Motif de la prise en charge :</p>
+                        <p>Paraplégie centrale</p>
+                    </div>
+                    <div class='col-lg-7 white white col-lg-offset-1'>
+                        <p>Missions à accomplir</p>
+                        <ul>
+                            <li>Lever</li>
+                            <li>Toilette</li>
+                            <li>Courses</li>
+                            <li>Petit-déjeuner</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <footer id='app-footer'>
+                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
                 <p>♥ from SIC-UxD</p>
             </footer>
         </div>
         <section id='app-modals'>
-            <div id='modal-book' class='modal fade' role='dialog'>
-                <div class='modal-dialog'>
-                    <div class='modal-content'>
-                        <header class='modal-header'>
-                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
-                            <h4>Cahier de liaison</h4>
-                        </header>
-                        <div class='modal-body'>
-                            <article>
-                                <header>
-                                    <h3>Christine</h3>
-                                    <h6>Lundi 16 décembre 2013</h6>
-                                </header>
-                                <p>Réveil légèrement difficile aujourd'hui. Plus beaucoup de café, il faudrait penser à en racheter un paquet.</p>
-                            </article>
-                        </div>
-                        <footer class='modal-footer'>
-                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Revenir à l'intervention</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
+            
         </section>
         <!-- build:js /scripts/vendor.min.js -->
         <!-- bower:js -->
@@ -93,9 +111,6 @@
         <!-- endbuild -->
         <!-- build:js /scripts/app.min.js -->
         <script src='/scripts/app.min.js'></script>
-        <!-- endbuild -->
-        <!-- build:js /scripts/timer.min.js -->
-        <script src='/scripts/timer.min.js'></script>
         <!-- endbuild -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
