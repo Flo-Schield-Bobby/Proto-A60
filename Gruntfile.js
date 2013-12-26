@@ -352,11 +352,11 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'sass',
-                'coffee:dist'
+                'coffee'
             ],
             test: [
                 'coffee',
-                'copy:styles'
+                'sass'
             ],
             dist: [
                 'coffee',
@@ -376,7 +376,6 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
-            'modernizr',
             'copy:styles',
             'copy:scripts',
             'copy:sounds',
@@ -394,6 +393,9 @@ module.exports = function (grunt) {
     grunt.registerTask('test', [
         'clean:server',
         'concurrent:test',
+        'copy:styles',
+        'copy:scripts',
+        'copy:sounds',
         'autoprefixer',
         'connect:test',
         'mocha'
