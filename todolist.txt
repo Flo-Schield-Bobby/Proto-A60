@@ -1,0 +1,11 @@
+
+Page Cahier de Liaison : 
+	- Ajouter une ligne au tableau. 
+	- Effet sur le clic de l'icône refresh
+
+Page Planning : 
+	TOUT
+
+Page Scan QR Code :
+	- Ajouter une photo de QR Code
+
