@@ -27,7 +27,7 @@
             </header>
             <section id='app-content'>
                 <h2 class='block-centered'>Cahier de liaison</h2>
-                <table class="table table-hover">
+                <table id='history-list' class='table table-hover table-bordered'>
                     <thead>
                         <tr>
                             <th>Date</th>
@@ -69,7 +69,7 @@
                                 <a href='#modal-info' data-toggle='modal'><p>Mari</p></a>
                             </td>
                         </tr>
-                        <tr class="danger">
+                        <tr class='danger'>
                             <td>
                                 <a href='#modal-info' data-toggle='modal'><p>05/12</p></a>
                             </td>
@@ -80,7 +80,7 @@
                                 <a href='#modal-info' data-toggle='modal'><p>AD</p></a>
                             </td>
                         </tr>
-                        <tr class="danger">
+                        <tr class='danger'>
                             <td>
                                 <a href='#modal-info' data-toggle='modal'><p>06/12</p></a>
                             </td>
@@ -91,7 +91,7 @@
                                 <a href='#modal-info' data-toggle='modal'><p>AD</p></a>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class='empty'>
                             <td><a href='#modal-new' data-toggle='modal'></a></td>
                             <td><a href='#modal-new' data-toggle='modal'></a></td>
                             <td><a href='#modal-new' data-toggle='modal'></a></td>
@@ -133,34 +133,34 @@
                             <h4>Intervention</h4>
                         </header>
                         <div class='modal-body'>
-                            <form role="form">
+                            <form role='form'>
                                 <fieldset disabled>
-                                    <div class="checkbox">
+                                    <div class='checkbox'>
                                         <label>
-                                            <input type="checkbox" value="" checked>
+                                            <input type='checkbox' value='' checked>
                                                 Lever
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class='checkbox'>
                                         <label>
-                                            <input type="checkbox" value="" checked>
+                                            <input type='checkbox' value='' checked>
                                                 Toilette
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class='checkbox'>
                                         <label>
-                                            <input type="checkbox" value="" checked>
+                                            <input type='checkbox' value='' checked>
                                                 Courses
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class='checkbox'>
                                         <label>
-                                            <input type="checkbox" value="">
+                                            <input type='checkbox' value=''>
                                                 Petit Déjeuner
                                         </label>
                                     </div>
                                     <label>Commentaires</label>
-                                    <textarea class="form-control" rows="3">
+                                    <textarea class='form-control' rows='3'>
 N'a pas mangé
 Nauséeux
                                     </textarea>
@@ -169,7 +169,7 @@ Nauséeux
                         </div>
                         <footer class='modal-footer'>
                             <a href='#' class='btn btn-primary' data-dismiss='modal'>Revenir au cahier</a>
-                            <div class="block-centered"> <i class="pull-left glyphicon glyphicon-refresh"></i>Mis à jour le 06/12/2013 par Bernard Belin</div>
+                            <div class='block-centered'> <i class='pull-left glyphicon glyphicon-refresh'></i>Mis à jour le 06/12/2013 par Bernard Belin</div>
                         </footer>
                     </div>
                 </div>
@@ -182,37 +182,42 @@ Nauséeux
                             <h4>Intervention</h4>
                         </header>
                         <div class='modal-body'>
-                            <form role="form">
-                                <div class="checkbox">
+                            <form id='form-new-line' action='#' method='get' role='form'>
+                                <div class='checkbox'>
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type='checkbox' value='' data-field-name='hasWokenUp'>
                                             Lever
                                     </label>
                                 </div>
-                                <div class="checkbox">
+                                <div class='checkbox'>
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type='checkbox' value='' data-field-name='hasBeenGroomed'>
                                             Toilette
                                     </label>
                                 </div>
-                                <div class="checkbox">
+                                <div class='checkbox'>
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type='checkbox' value='' data-field-name='isShoppingDone'>
                                             Courses
                                     </label>
                                 </div>
-                                <div class="checkbox">
+                                <div class='checkbox'>
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type='checkbox' value='' data-field-name='hasHadBreakfast'>
                                             Petit Déjeuner
                                     </label>
                                 </div>
-                                <label>Commentaires</label>
-                                <textarea class="form-control" rows="3"></textarea>
+                                <div>
+                                    <label>Commentaires</label>
+                                    <textarea class='form-control' rows='3' data-field-name='comments'></textarea>
+                                </div>
+                                <div class='link-wrapper'>
+                                    <input type='submit' class='btn btn-success' name='submit' value='Ajouter au cahier' />
+                                </div>
                             </form>
                         </div>
                         <footer class='modal-footer'>
-                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Ajouter au cahier</a>
+                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Fermer</a>
                         </footer>
                     </div>
                 </div>
@@ -222,6 +227,7 @@ Nauséeux
         <!-- bower:js -->
         <script src='/components/jquery/jquery.js'></script>
         <script src='/components/buzz/dist/buzz.min.js'></script>
+        <script src='/scripts/vendors/localStorage.js'></script>
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:js /scripts/bootstrap.min.js -->
@@ -239,7 +245,39 @@ Nauséeux
         <script src='/components/sass-bootstrap/js/tab.js'></script>
         <!-- endbuild -->
         <!-- build:js /scripts/app.min.js -->
-        <script src='/scripts/app.min.js'></script>
+        <script src='/scripts/form-book.min.js'></script>
+        <script>
+            $(function () {
+                var results = [], newLineEl, col1, col2, col3;
+                for (i = 0; i < localStorage.length; i++) {
+                    var key = localStorage.key(i), bookLine, bookLineDate;
+                    if (key.slice(0, 5) === 'info-') {
+                        bookLine = localStorage.getObject(key);
+                        bookLineDate = new Date(bookLine.date);
+                        newLineEl = $('<tr>', {
+                            'class': 'success'
+                        });
+                        col1 = $('<a>', {
+                            'href': '#modal-info',
+                            'data-toggle': 'modal'
+                        });
+                        col1.html($('<p>').html(bookLineDate.getDate() + '/' + bookLineDate.getMonth() + 1));
+                        col2 = $('<a>', {
+                            'href': '#modal-info',
+                            'data-toggle': 'modal'
+                        });
+                        col2.html($('<p>').html(bookLine.name));
+                        col3 = $('<a>', {
+                            'href': '#modal-info',
+                            'data-toggle': 'modal'
+                        });
+                        col3.html($('<p>').html(bookLine.link));
+                        newLineEl.append($('<td>').html(col1), $('<td>').html(col2), $('<td>').html(col3));
+                        $('#history-list').find('tr.empty').before(newLineEl);
+                    }
+                }
+            });
+        </script>
         <!-- endbuild -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

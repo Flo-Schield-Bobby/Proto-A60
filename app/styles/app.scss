@@ -74,7 +74,7 @@ html {
                     margin:10px 0 20px;
                 }
             }
-            h4, .btn {
+            h4 {
                 @extend .col-lg-offset-1;
             }
             table {
@@ -112,7 +112,7 @@ html {
             .message {
                 background:#FFF;
                 padding:20px 20px 10px;
-                margin:20px 20px 20px 45px;
+                margin: 10px 40px;
             }
         }
         #app-modals {
