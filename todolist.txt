@@ -4,8 +4,8 @@ Page Cahier de Liaison :
 	- Effet sur le clic de l'icône refresh
 
 Page Planning : 
-	TOUT
+	- Ajouter un nouveau message sur dialogue.html
 
-Page Scan QR Code :
-	- Ajouter une photo de QR Code
+Pages TMS  :
+	- Attendre Mockups
 
