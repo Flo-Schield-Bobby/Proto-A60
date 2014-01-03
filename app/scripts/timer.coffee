@@ -9,24 +9,26 @@ class Timer
 
 	constructor: (config) ->
 		config = $.extend {
-			'timerLabelId': 'timer',
+			'value': 0
+			'timerLabelId': 'timer'
 			'callbacks': {}
 		}, config
-		@timer = 0
+		@timer = config.value
 		@timerId = null
 		@$timerLabel = $('#' + config.timerLabelId).first()
 		@callbacks = config.callbacks
+		@display()
 		@launch()
 		return @
 
 	count: () =>
-		@timer++;
+		@timer++
 		@display()
 		if @callbacks[@timer]
 			if typeof @callbacks[@timer] == 'function'
-				@callbacks[@timer].apply(@)
+				@callbacks[@timer].apply @
 			if (typeof @callbacks[@timer] == 'object') && @callbacks[@timer].hasOwnProperty 'execute'
-				@callbacks[@timer].execute.apply(@, @callbacks[@timer].params)
+				@callbacks[@timer].execute.apply @, @callbacks[@timer].params
 		@
 
 	display: () =>
@@ -48,6 +50,11 @@ class Timer
 	cancel: () =>
 		clearInterval @timerId
 		@timerId = null
+		localStorage.setItem 'timer', 0
+		@
+
+	save: () =>
+		localStorage.setItem 'timer', @timer
 		@
 
 
@@ -59,11 +66,20 @@ $ ->
 	}
 	__timer__ = new Timer {
 		timerLabelId: 'app-timer',
+		value: localStorage.getItem('timer') || 0
 		callbacks: {
-			15: {
+			60: {
 				'params': [__sounds__],
 				'execute': (sounds) ->
 					sounds.alert.play()
 			}
 		}
+	}
+	$('a').on {
+		'click': (e) ->
+			console.log $(@).data('stop')
+			if $(@).data('stop') == 'timer'
+				__timer__.cancel()
+			else
+				__timer__.save()
 	}
