@@ -1,6 +1,4 @@
-
-Page Cahier de Liaison : 
-	- Ajouter une ligne au tableau. 
+Page Cahier de Liaison :
 	- Effet sur le clic de l'icône refresh
 
 Page Planning : 
