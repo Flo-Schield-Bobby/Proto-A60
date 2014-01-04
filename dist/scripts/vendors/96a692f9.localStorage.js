@@ -1,0 +1,1 @@
+Modernizr.localstorage&&Storage&&(Storage.prototype.setObject=function(a,b){this.setItem(a,JSON.stringify(b))},Storage.prototype.getObject=function(a){var b=this.getItem(a);return b&&JSON.parse(b)});

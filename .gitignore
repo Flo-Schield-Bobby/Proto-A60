@@ -1,6 +1,6 @@
 # Base cache files and dependencies
 node_modules
-dist
+#dist
 .tmp
 .sass-cache
 app/components
