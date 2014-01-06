@@ -24,22 +24,37 @@
             <section id="app-content">
                 <div class="row">
                     <div class="message row col-lg-6 col-lg-push-5 col-md-6 col-md-push-5 col-md-push-5 col-sm-6 col-sm-push-5">
-                        <div class="col-lg-4">
+                        <figure class="col-lg-4">
                             <img class="avatar img-rounded">
-                        </div>
-                        <h4>Vous</h4>
-                        <p>Il y a 3 min</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                        </figure>
+                        <h4 class="message-title">Vous</h4>
+                        <p class="message-date">Il y a 3 min</p>
+                        <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="message row col-lg-6 col-md-6 col-sm-6">
-                        <div class="col-lg-4">
+                        <figure class="col-lg-4">
                             <img class="avatar img-rounded">
-                        </div>
-                        <h4>Administration</h4>
-                        <p>Il y a 1 min</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                        </figure>
+                        <h4 class="message-title">Administration</h4>
+                        <p class="message-date">Il y a 1 min</p>
+                        <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="well">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 cold-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                        <form action="#" id="form-message">
+                            <div class="form-group">
+                                <label for="field-message" id="message">Message</label>
+                                <textarea class="form-control" name="message" id="field-message" rows="10" data-field-name="message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-info" name="submit" value="Valider">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -50,6 +65,7 @@
         </div>
         <script src="/scripts/4b31fe14.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
+        <script src="/scripts/6d857abe.form-message.min.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
