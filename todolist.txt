@@ -1,9 +1,5 @@
 Page Cahier de Liaison :
 	- Effet sur le clic de l'icône refresh
 
-Page Planning : 
-	- Ajouter un nouveau message sur dialogue.html
-
 Pages TMS  :
 	- Attendre Mockups
-
