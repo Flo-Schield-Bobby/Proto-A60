@@ -124,6 +124,14 @@ html {
                     cursor:pointer;
                 }
             }
+            #benef-fiches{
+                .modal-dialog {
+                    width:650px;
+                }
+                .dropdown-menu {
+                    font-size:12px;
+                }
+            } 
         }
     }
 }
