@@ -406,38 +406,6 @@
         <!-- endbuild -->
         <!-- build:js /scripts/form-book.min.js -->
         <script src='/scripts/form-book.min.js'></script>
-        <script>
-            $(function () {
-                var results = [], newLineEl, col1, col2, col3;
-                for (i = 0; i < localStorage.length; i++) {
-                    var key = localStorage.key(i), bookLine, bookLineDate;
-                    if (key.slice(0, 5) === 'info-') {
-                        bookLine = localStorage.getObject(key);
-                        bookLineDate = new Date(bookLine.date);
-                        newLineEl = $('<tr>', {
-                            'class': 'success'
-                        });
-                        col1 = $('<a>', {
-                            'href': '#modal-info',
-                            'data-toggle': 'modal'
-                        });
-                        col1.html($('<p>').html(bookLineDate.getDate() + '/' + bookLineDate.getMonth() + 1));
-                        col2 = $('<a>', {
-                            'href': '#modal-info',
-                            'data-toggle': 'modal'
-                        });
-                        col2.html($('<p>').html(bookLine.name));
-                        col3 = $('<a>', {
-                            'href': '#modal-info',
-                            'data-toggle': 'modal'
-                        });
-                        col3.html($('<p>').html(bookLine.link));
-                        newLineEl.append($('<td>').html(col1), $('<td>').html(col2), $('<td>').html(col3));
-                        $('#history-list').find('tr.empty').before(newLineEl);
-                    }
-                }
-            });
-        </script>
         <!-- endbuild -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

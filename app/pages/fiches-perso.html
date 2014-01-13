@@ -68,7 +68,7 @@
                                 <p>02/12</p>
                             </td>
                             <td>
-                                <a href='' data-toggle='modal'><p>Toilettes</p></a>
+                                <a href='#modal-infos' data-toggle='modal'><p>Toilettes</p></a>
                             </td>
                             <td>
                                 <a href='#modal-icon' data-toggle='modal'><i class="glyphicon glyphicon-ok"></i></a>
@@ -84,7 +84,7 @@
                                 <p>02/12</p>
                             </td>
                             <td>
-                                <a href='' data-toggle='modal'><p>Demande d'un tapis anti-dérapant</p></a>
+                                <a href='#modal-infos' data-toggle='modal'><p>Demande d'un tapis anti-dérapant</p></a>
                             </td>
                             <td>
                                 <a href='#modal-icon' data-toggle='modal'><i class="glyphicon glyphicon-eye-open"></i></a>
@@ -100,7 +100,7 @@
                                 <p>02/12</p>
                             </td>
                             <td>
-                                <a href='' data-toggle='modal'><p>Communication avec le médecin</p></a>
+                                <a href='#modal-infos' data-toggle='modal'><p>Communication avec le médecin</p></a>
                             </td>
                             <td>
                                 <a href='#modal-icon' data-toggle='modal'><i class="glyphicon glyphicon-remove"></i></a>
@@ -116,7 +116,7 @@
                                 <p>02/12</p>
                             </td>
                             <td>
-                                <a href='' data-toggle='modal'><p></p></a>
+                                <a href='#modal-infos' data-toggle='modal'><p></p></a>
                             </td>
                             <td>
                                 <a href='#modal-icon' data-toggle='modal'><i class="glyphicon glyphicon-eye-close"></i></a>
@@ -132,7 +132,7 @@
                                 <p>02/12</p>
                             </td>
                             <td>
-                                <a href='' data-toggle='modal'><p></p></a>
+                                <a href='#modal-infos' data-toggle='modal'><p></p></a>
                             </td>
                             <td>
                                 <a href='#modal-icon' data-toggle='modal'><i class="glyphicon glyphicon-ok"></i></a>
@@ -140,46 +140,6 @@
                             <td>
                                 <a href='#modal-icon' data-toggle='modal'><i class="glyphicon glyphicon-refresh"></i></a>
                             </td>
-                        </tr>
-                        <tr class='empty'>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -412,6 +372,23 @@
                     </div>
                 </div>
             </div>
+            <div id='modal-infos' class='modal fade' role='dialog'>
+                <div class='modal-dialog'>
+                    <div class='modal-content'>
+                        <header class='modal-header'>
+                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
+                            <h4>Détail de la fiche</h4>
+                        </header>
+                        <div class='modal-body'>
+                            Nous avons remarqué le manque d'un tapis anti-dérapant dans la salle de bain du bénificiaire qui permetterait de l'empêcher de glisser à la sortie de sa douche.
+                           
+                        </div>
+                        <footer class='modal-footer'>
+                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Fermer</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- build:js /scripts/vendor.min.js -->
         <!-- bower:js -->
@@ -437,42 +414,14 @@
         <!-- endbuild -->
         <!-- build:js /scripts/form-book.min.js -->
         <script src='/scripts/form-book.min.js'></script>
+        <!-- endbuild -->
         <script>
             $(function () {
                 if (localStorage.getItem('session-started') == 'true') {
                     $('#home-link').attr('href', '/pages/session.html');
                 }
-                var results = [], newLineEl, col1, col2, col3;
-                for (i = 0; i < localStorage.length; i++) {
-                    var key = localStorage.key(i), bookLine, bookLineDate;
-                    if (key.slice(0, 5) === 'info-') {
-                        bookLine = localStorage.getObject(key);
-                        bookLineDate = new Date(bookLine.date);
-                        newLineEl = $('<tr>', {
-                            'class': 'success'
-                        });
-                        col1 = $('<a>', {
-                            'href': '#modal-info',
-                            'data-toggle': 'modal'
-                        });
-                        col1.html($('<p>').html(bookLineDate.getDate() + '/' + bookLineDate.getMonth() + 1));
-                        col2 = $('<a>', {
-                            'href': '#modal-info',
-                            'data-toggle': 'modal'
-                        });
-                        col2.html($('<p>').html(bookLine.name));
-                        col3 = $('<a>', {
-                            'href': '#modal-info',
-                            'data-toggle': 'modal'
-                        });
-                        col3.html($('<p>').html(bookLine.link));
-                        newLineEl.append($('<td>').html(col1), $('<td>').html(col2), $('<td>').html(col3));
-                        $('#history-list').find('tr.empty').before(newLineEl);
-                    }
-                }
             });
         </script>
-        <!-- endbuild -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
