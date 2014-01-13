@@ -24,14 +24,30 @@
         <div class='container'>
             <header id='app-navigation-bar'>
                 <h5>Aide60 - ICX02</h5>
+                <div id='app-navbar' class='navbar navbar-default'>
+                    <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                        <ul class='nav navbar-nav'>
+                            <li>
+                                <a href='/pages/planning.html'>Mon planning</a>
+                            </li>
+                            <li>
+                                <a href='/pages/fiches.html'>Mes fiches</a>
+                            </li>
+                        </ul>
+                        <ul class='nav navbar-nav navbar-right'>
+                            <li>
+                                <a href='#'>Guide des risques professionnels</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <a href='/pages/'></a>
+                </div>
             </header>
             <section id='app-content'>
-                <figure class='center TMS-wrapper'>
-                    <figcaption>Garder toujours 15cm sous le coude</figcaption>
-                    <img src='/images/TMS/repassage.jpg' alt='Repassage' />
-                </figure>
-                <div id='progress-bar' class='progress progress-striped active' data-load='/pages/intro.html'>
-                    <div class='progress-bar' role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'></div>
+                <div class='link-wrapper'>
+                    <a href='/pages/scan.html' class='centered btn btn-info btn-lg'>Commencer l'intervention<br />Flashez le QR Code du bénéficiaire</a>
                 </div>
             </section>
             <footer id='app-footer'>
@@ -77,9 +93,6 @@
         <script src='/components/jsqrcode/src/findpat.js'></script>
         <script src='/components/jsqrcode/src/alignpat.js'></script>
         <script src='/components/jsqrcode/src/databr.js'></script>
-        <!-- endbuild -->
-        <!-- build:js(.tmp) /scripts/loader.min.js -->
-        <script src='/scripts/loader.min.js'></script>
         <!-- endbuild -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

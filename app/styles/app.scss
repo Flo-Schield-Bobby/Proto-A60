@@ -26,11 +26,15 @@ html {
                 }
             }
         }
+        .center {
+            text-align: center;
+        }
+        .glyphicon {
+            margin: 0 5px 0 0;
+        }
         #app-navigation-bar,
         #app-footer {
-            background: $app-bars-background;
             min-height: 42px;
-            padding: 0 15px;
         }
         #app-navigation-bar {
             h4,
@@ -42,14 +46,20 @@ html {
                 text-align: center;
                 font-weight: 200;
                 color: $app-bars-text;
+                background: $app-bars-background;
+            }
+            #app-navbar {
+                margin: 0;
             }
         }
         #app-footer {
+            padding: 0 15px;
             line-height: 42px;
             text-align: center;
-            color: $white;
             font-weight: 200;
-            overflow:hidden;
+            overflow: hidden;
+            color: $white;
+            background: $app-bars-background;
         }
         #app-content {
             padding: 20px 0;
@@ -113,6 +123,27 @@ html {
                 background:#FFF;
                 padding:20px 20px 10px;
                 margin: 10px 40px;
+            }
+            .TMS-wrapper {
+                figcaption {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                img {
+                    width: 400px;
+                }
+            }
+            .progress {
+                max-width: 400px;
+                margin: 20px auto 0 auto;
+                .progress-bar {
+                    @include transition(width 3.0s linear);
+                }
+                &.complete {
+                    .progress-bar {
+                        width: 100%;
+                    }
+                }
             }
         }
         #app-modals {
