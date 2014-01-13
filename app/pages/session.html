@@ -23,13 +23,13 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar' class='padded'>
-                <h5><a href='/pages/scan.html' class='btn btn-default pull-left'>Scan</a></h5>
+                <h5><a href='/pages/scan.html' class='btn btn-default pull-left stop-session-link' data-stop='timer'>Scan</a></h5>
             </header>
             <div id='app-navbar' class='navbar navbar-default'>
                 <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
                     <ul class='nav navbar-nav'>
                         <li>
-                            <a href='/pages/intro.html'><i class='glyphicon glyphicon-home'></i></a>
+                            <a href='/pages/session.html'><i class='glyphicon glyphicon-home'></i></a>
                         </li>
                         <li>
                             <a href='/pages/planning-perso.html'>Mon planning</a>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class='link-wrapper'>
-                    <a href='/index.html' class='btn btn-danger btn-lg' data-stop='timer'>Terminer l'intervention</a>
+                    <a href='/index.html' class='btn btn-danger btn-lg stop-session-link' data-stop='timer'>Terminer l'intervention</a>
                 </div>
             </section>
             <footer id='app-footer'>
@@ -102,6 +102,13 @@
         <!-- endbuild -->
         <!-- build:js /scripts/timer.min.js -->
         <script src='/scripts/timer.min.js'></script>
+        <script>
+            $(function () {
+                $('.stop-session-link').on('click', function (e) {
+                    localStorage.setItem('session-started', false);
+                });
+            });
+        </script>
         <!-- endbuild -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

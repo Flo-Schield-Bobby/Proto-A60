@@ -30,7 +30,6 @@ class Scanner
 		@context.clearRect 0, 0, @canvasRootEl.width, @canvasRootEl.height;
 		@data = @context.getImageData 0, 0, @canvasRootEl.width, @canvasRootEl.height
 		qrcode.callback = (data) =>
-			console.log 'qrcode callback'
 			@analyse(data)
 			@
 
@@ -59,7 +58,6 @@ class Scanner
 
 	decode: () =>
 		@context.drawImage @videoRootEl, 0, 0
-		console.log 'decode', qrcode
 		try
 			qrcode.decode()
 		catch e    
@@ -70,7 +68,6 @@ class Scanner
 		@
 
 	analyse: (data) =>
-		console.log 'analyse', data
 		@
 
 navigator.getMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia)

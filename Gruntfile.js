@@ -300,7 +300,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
-                        'images/{,*/}*.{webp,gif}',
+                        'images/{,*/}*.{webp,gif,jpg,JPG,jpge,JPEG,png,PNG,gif,GIF}',
                         'sounds/{,*/}*.{mp3,ogg,wav}',
                         'styles/fonts/{,*/}*.*',
                         'components/sass-bootstrap/fonts/*.*'

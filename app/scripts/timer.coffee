@@ -77,7 +77,6 @@ $ ->
 	}
 	$('a').on {
 		'click': (e) ->
-			console.log $(@).data('stop')
 			if $(@).data('stop') == 'timer'
 				__timer__.cancel()
 			else
