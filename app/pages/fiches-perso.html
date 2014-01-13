@@ -22,29 +22,28 @@
             <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class='container'>
-            <header id='app-navigation-bar' class='padded'>
-                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
+            <header id='app-navigation-bar'>
+                <div id='app-navbar' class='navbar navbar-default'>
+                    <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                        <ul class='nav navbar-nav'>
+                            <li>
+                                <a href='/pages/intro.html'><i class='glyphicon glyphicon-home'></i></a>
+                            </li>
+                            <li>
+                                <a href='/pages/planning-perso.html'>Mon planning</a>
+                            </li>
+                            <li>
+                                <a href='/pages/fiches-perso.html'>Mes fiches</a>
+                            </li>
+                        </ul>
+                        <ul class='nav navbar-nav navbar-right'>
+                            <li>
+                                <a href='#'>Guide des risques professionnels</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-            <div id='app-navbar' class='navbar navbar-default'>
-                <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
-                    <ul class='nav navbar-nav'>
-                        <li>
-                            <a href='/pages/intro.html'><i class='glyphicon glyphicon-home'></i></a>
-                        </li>
-                        <li>
-                            <a href='/pages/planning-perso.html'>Mon planning</a>
-                        </li>
-                        <li>
-                            <a href='/pages/fiches-perso.html'>Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class='nav navbar-nav navbar-right'>
-                        <li>
-                            <a href='#'>Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <section id='app-content'>
                 <h2 class='block-centered'>Mes fiches</h2>
                 <table id='history-list' class='table table-hover table-bordered'>
