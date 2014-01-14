@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="/styles/e0c814fd.app.min.css"/>
+        <link rel="stylesheet" href="/styles/3e6b0e87.app.min.css"/>
         <script src="/scripts/vendor/1a5317ff.modernizr.js"></script>
     </head>
     <body>
@@ -77,6 +77,13 @@
         <script src="/scripts/4b31fe14.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
         <script src="/scripts/fcf75a76.timer.min.js"></script>
+        <script>
+            $(function () {
+                $('.stop-session-link').on('click', function (e) {
+                    localStorage.setItem('session-started', false);
+                });
+            });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

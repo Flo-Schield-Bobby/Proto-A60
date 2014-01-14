@@ -143,11 +143,11 @@ html {
                     font-weight: bold;
                 }
                 img {
-                    width: 400px;
+                    width: 300px;
                 }
             }
             .progress {
-                max-width: 400px;
+                max-width: 300px;
                 margin: 20px auto 0 auto;
                 .progress-bar {
                     @include transition(width 3.0s linear);
