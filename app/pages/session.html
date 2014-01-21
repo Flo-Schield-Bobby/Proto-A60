@@ -23,7 +23,8 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar' class='padded'>
-                <h5><a href='/pages/scan.html' class='btn btn-default pull-left stop-session-link' data-stop='timer'>Scan</a></h5>
+                <h5>Aide60 - ICX02
+                <a href='/pages/dialogue.html' class="btn btn-sm btn-danger pull-right"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a></h5>
             </header>
             <div id='app-navbar' class='navbar navbar-default'>
                 <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
@@ -66,13 +67,29 @@
                     </div>
                     <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
                         <div class='link-wrapper'>
-                            <a href='/pages/fiches.html' class='btn btn-default btn-lg btn-cta'><i class='glyphicon glyphicon-list-alt'></i><br /> Mes<br />Fiches</a>
+                            <a href='/pages/fiches.html' class='btn btn-default btn-lg btn-cta'><i class='glyphicon glyphicon-list-alt'></i><br />Fiches <br />Bénéficiaires</a>
                         </div>
                     </div>
                 </div>
                 <div class='link-wrapper'>
-                    <a href='/index.html' class='btn btn-danger btn-lg stop-session-link' data-stop='timer'>Terminer l'intervention</a>
+                    <a href='#modal-accept' data-toggle='modal' class='btn btn-danger btn-lg stop-session-link' data-stop='timer'>Cliquez-ici pour terminer l'intervention</a>
                 </div>
+            </section>
+            <section id='app-modals'>
+            <div id='modal-accept' class='modal fade' role='dialog'>
+                <div class='modal-dialog'>
+                    <div class='modal-content'>
+                        <header class='modal-header'>
+                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
+                            <h4>Voulez-vous vraiment terminer l'intervention ?</h4>
+                        </header>
+                        <footer class='modal-footer'>
+                            <a href='/index.html' class='btn btn-success stop-session-link pull-right' data-stop='timer'>Oui</a>
+                            <a href='#' class='btn btn-danger pull-left' data-dismiss='modal'>Non</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
             </section>
             <footer id='app-footer'>
                 <p>♥ from SIC-UxD</p>

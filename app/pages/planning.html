@@ -23,7 +23,8 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar' class='padded'>
-                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
+                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a>Aide60 - ICX02
+                <a href='/pages/dialogue.html' class="btn btn-sm btn-danger pull-right"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a></h5>
             </header>
             <div id='app-navbar' class='navbar navbar-default'>
                 <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
@@ -46,7 +47,7 @@
                 </nav>
             </div>
             <section id='app-content'>
-                <h2 class='block-centered'>Votre Planning</h2>
+                <h2 class='block-centered'>Planning de Mr Lagnez</h2>
                 <table class="table table-hover table-planning">
                     <thead>
                         <tr>
@@ -74,13 +75,13 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mlle E</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mlle E</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mlle E</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mlle E</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mlle E</a></td>
-                            <td></td>
-                            <td></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mr Bazin</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mr Bazin</a></td>
                         </tr>
                         <tr>
                             <td rowspan="2">7h-8h</td>
@@ -93,60 +94,65 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr Y</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr Y</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr Y</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr Y</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr Y</a></td>
                             <td></td>
                             <td></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">8h-9h</td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme Z</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme Z</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme Z</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme Z</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme Z</a></td>
                             <td></td>
                             <td></td>
-                        </tr>
-                        <tr>
                             <td></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr G</a></td>
-                            <td class="danger" rowspan="2"><a href='#modal-info' data-toggle='modal'>Melle W</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr G</a></td>
-                            <td class="success"><a href='#modal-info' data-toggle='modal'>Mr C</a></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td rowspan="2">8h-9h</td>
                             <td></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme H</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme H</a></td>
-                            <td class="success" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mlle F</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme P</a></td>
-                            <td class="danger" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mme O</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme P</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">9h-10h</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td rowspan="2">10h-11h</td>
                             <td></td>
-                            <td class="success" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mr A</a></td>
                             <td></td>
-                            <td class="success" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mr A</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -156,14 +162,16 @@
                         <tr>
                             <td rowspan="2">11h-12h</td>
                             <td></td>
-                            <td class="success" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mme B</a></td>
                             <td></td>
                             <td></td>
-                            <td class="success" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mlle D</a></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -172,13 +180,13 @@
                         </tr>
                         <tr>
                             <td rowspan="2">12h-13h</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mr Bazin</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mr Bazin</a></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -230,7 +238,7 @@
                         <tr>
                             <td rowspan="2">15h-16h</td>
                             <td></td>
-                            <td class="success" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mme D</a></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -241,14 +249,16 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td class="danger" rowspan="2"><a href='#modal-validate' data-toggle='modal'><i class="glyphicon glyphicon-warning-sign pull-left"></i>  Mme T</a></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td rowspan="2">16h-17h</td>
                             <td></td>
-                            <td class="danger" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mme R</a></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -256,7 +266,8 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="danger" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mlle S</a></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -266,7 +277,8 @@
                             <td rowspan="2">17h-18h</td>
                             <td></td>
                             <td></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mr G</a></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -284,31 +296,33 @@
                             <td rowspan="2">18h-19h</td>
                             <td></td>
                             <td></td>
-                            <td class="success" rowspan="2"><a href='#modal-info' data-toggle='modal'>Mlle D</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme P</a></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mlle Chaput</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mr Bazin</a></td>
+                            <td class="active"><a href='#modal-info' data-toggle='modal'>Mr Bazin</a></td>
                         </tr>
                         <tr>
                             <td rowspan="2">19h-20h</td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme X</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme X</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme X</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme X</a></td>
-                            <td class="warning"><a href='#modal-info' data-toggle='modal'>Mme X</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -321,7 +335,7 @@
                 </table>
             </section>
             <footer id='app-footer'>
-                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
+                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a></h5>
                 <p>♥ from SIC-UxD</p>
             </footer>
         </div>
@@ -334,18 +348,49 @@
                             <h4></h4>
                         </header>
                         <div class='modal-body'>
-                            <p>Mr A<br />
-                            13 rue des Acacias<br />
-                            60200 Compiègne</p>
-
-                            <p><a href='/pages/gps.html' class='btn btn-default'><i class="glyphicon glyphicon-map-marker"></i> GPS</a></p>
+                            <p>Mlle Chaput <br />
+                            06.03.98.75.46</p>
 
                             <p>11h15 - 12h15<br />
                             Intervention Sociale<br />
-                            Détails : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </p>
+
+                            <p>Détails : <br />
+                                <form role='form'>
+                                    <fieldset disabled>
+                                        <div class='checkbox'>
+                                            <label>
+                                                <input type='checkbox' value='' checked>
+                                                    Lever
+                                            </label>
+                                        </div>
+                                        <div class='checkbox'>
+                                            <label>
+                                                <input type='checkbox' value='' checked>
+                                                    Toilette
+                                            </label>
+                                        </div>
+                                        <div class='checkbox'>
+                                            <label>
+                                                <input type='checkbox' value='' checked>
+                                                    Courses
+                                            </label>
+                                        </div>
+                                        <div class='checkbox'>
+                                            <label>
+                                                <input type='checkbox' value=''>
+                                                    Petit Déjeuner
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </p>
+                            <div class="link-wrapper">
+                                <a href='/pages/dialogue.html' class='btn btn-danger'><i class="glyphicon glyphicon-warning-sign"></i> Alerter le bureau</a>
+                            </div>
                         </div>
                         <footer class='modal-footer'>
-                            <a href='/pages/dialogue.html' class='btn btn-danger'><i class="glyphicon glyphicon-warning-sign"></i> Alerter le bureau</a>
+                            <a a href='#' data-dismiss='modal' class='btn btn-primary'>Fermer</a>
                         </footer>
                     </div>
                 </div>

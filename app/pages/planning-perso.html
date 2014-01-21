@@ -23,7 +23,8 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar' class='padded'>
-                <h5>Aide60 - ICX02</h5>
+                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a>Aide60 - ICX02
+                <a href='/pages/dialogue.html' class="btn btn-sm btn-danger pull-right"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a></h5>
             </header>
             <div id='app-navbar' class='navbar navbar-default'>
                 <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
@@ -46,7 +47,7 @@
                 </nav>
             </div>
             <section id='app-content'>
-                <h2 class='block-centered'>Votre Planning</h2>
+                <h2 class='block-centered'>Mon Planning</h2>
                 <table class="table table-hover table-planning">
                     <thead>
                         <tr>
@@ -321,7 +322,7 @@
                 </table>
             </section>
             <footer id='app-footer'>
-                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
+                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a></h5>
                 <p>♥ from SIC-UxD</p>
             </footer>
         </div>
@@ -334,18 +335,35 @@
                             <h4></h4>
                         </header>
                         <div class='modal-body'>
-                            <p>Mr A<br />
+                            <p>Mr Lagnez<br />
                             13 rue des Acacias<br />
                             60200 Compiègne</p>
 
-                            <p><a href='/pages/gps.html' class='btn btn-default'><i class="glyphicon glyphicon-map-marker"></i> GPS</a></p>
-
                             <p>11h15 - 12h15<br />
                             Intervention Sociale<br />
-                            Détails : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </p>
+
+                            <p>Personne à contacter en cas de problème :<br />
+                            Mme Lagnez <br />
+                            06 09 93 90 02
+                            </p>
+
+                            <p>Détails pour l'accès :<br />
+                            Porte juste à côté de la pharmacie
+                            </p>
+
+                            <div class='link-wrapper'>
+                                <p>
+                                    <a href='/pages/gps.html' class='btn btn-primary'><i class="glyphicon glyphicon-map-marker"></i> GPS</a>
+                                <a href="/pages/mission.html" class="btn btn-primary">Accéder à la fiche mission</a>
+                                </p>
+                                <p>
+                                    <a href='/pages/dialogue.html' class='btn btn-danger'><i class="glyphicon glyphicon-warning-sign"></i> Alerter le bureau</a>
+                                </p>
+                            </div>
                         </div>
                         <footer class='modal-footer'>
-                            <a href='/pages/dialogue.html' class='btn btn-danger'><i class="glyphicon glyphicon-warning-sign"></i> Alerter le bureau</a>
+                            <a href='#' data-dismiss="modal" class='btn btn-primary'>Fermer</a>
                         </footer>
                     </div>
                 </div>

@@ -42,7 +42,8 @@ html {
         #app-navigation-bar {
             h4,
             h5,
-            h6 {
+            h6,
+            p {
                 margin: 0 auto;
                 padding: 10px 0;
                 @include clearfix();
@@ -120,8 +121,14 @@ html {
                     tr {
                         td {
                             height: 30px;
+                            vertical-align:middle;
                         }
                     }
+                }
+            }
+            #history-list {
+                i {
+                    font-size:20px;
                 }
             }
             #gps {

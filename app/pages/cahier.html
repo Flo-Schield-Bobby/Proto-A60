@@ -23,7 +23,8 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar' class='padded'>
-                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
+                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a>Aide60 - ICX02
+                <a href='/pages/dialogue.html' class="btn btn-sm btn-danger pull-right"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a></h5>
             </header>
             <div id='app-navbar' class='navbar navbar-default'>
                 <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
@@ -47,9 +48,13 @@
             </div>
             <section id='app-content'>
                 <h2 class='block-centered'>Cahier de liaison</h2>
+                <div class='link-wrapper pull-right'>
+                    <a href='#modal-new' data-toggle='modal' class='btn btn-primary btn-md stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-plus"></i> Ajouter un nouveau message</a>
+                </div>
                 <table id='history-list' class='table table-hover table-bordered'>
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Date</th>
                             <th>Nom</th>
                             <th>Lien avec le bénéficiaire</th>
@@ -57,6 +62,9 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>
+                                <a href='#modal-info' data-toggle='modal'><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
                             <td>
                                 <a href='#modal-info' data-toggle='modal'><p>02/12</p></a>
                             </td>
@@ -69,6 +77,9 @@
                         </tr>
                         <tr>
                             <td>
+                                <a href='#modal-info' data-toggle='modal'><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
+                            <td>
                                 <a href='#modal-info' data-toggle='modal'><p>03/12</p></a>
                             </td>
                             <td>
@@ -79,6 +90,9 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <a href='#modal-info' data-toggle='modal'><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
                             <td>
                                 <a href='#modal-info' data-toggle='modal'><p>04/12</p></a>
                             </td>
@@ -91,6 +105,9 @@
                         </tr>
                         <tr class='danger'>
                             <td>
+                                <a href='#modal-info' data-toggle='modal'><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
+                            <td>
                                 <a href='#modal-info' data-toggle='modal'><p>05/12</p></a>
                             </td>
                             <td>
@@ -102,6 +119,9 @@
                         </tr>
                         <tr class='danger'>
                             <td>
+                                <a href='#modal-info' data-toggle='modal'><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
+                            <td>
                                 <a href='#modal-info' data-toggle='modal'><p>06/12</p></a>
                             </td>
                             <td>
@@ -111,36 +131,11 @@
                                 <a href='#modal-info' data-toggle='modal'><p>AD</p></a>
                             </td>
                         </tr>
-                        <tr class='empty'>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                            <td><a href='#modal-new' data-toggle='modal'></a></td>
-                        </tr>
                     </tbody>
                 </table>
             </section>
             <footer id='app-footer'>
-                <h5><a href='/pages/session.html' class='btn btn-default pull-left'>Retour</a></h5>
+                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a></h5>
                 <p>♥ from SIC-UxD</p>
             </footer>
         </div>
@@ -231,13 +226,13 @@ Nauséeux
                                     <label>Commentaires</label>
                                     <textarea class='form-control' rows='3' data-field-name='comments'></textarea>
                                 </div>
-                                <div class='link-wrapper'>
-                                    <input type='submit' class='btn btn-success' name='submit' value='Ajouter au cahier' />
-                                </div>
                             </form>
                         </div>
                         <footer class='modal-footer'>
-                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Fermer</a>
+                            <div class='link-wrapper'>
+                                    <input type='submit' class='btn btn-success' name='submit' data-dismiss='modal' value='Ajouter au cahier' />
+                                    <button class='btn btn-danger' data-dismiss='modal'>Annuler</a>
+                                </div>
                         </footer>
                     </div>
                 </div>
@@ -279,22 +274,27 @@ Nauséeux
                             'class': 'success'
                         });
                         col1 = $('<a>', {
-                            'href': '#modal-info',
-                            'data-toggle': 'modal'
+                            'href' : '#modal-info',
+                            'data-toggle' : 'modal'
                         });
-                        col1.html($('<p>').html(bookLineDate.getDate() + '/' + bookLineDate.getMonth() + 1));
+                        col1.html($('<p>').html('<i class="glyphicon glyphicon-plus-sign"></i>'));
                         col2 = $('<a>', {
                             'href': '#modal-info',
                             'data-toggle': 'modal'
                         });
-                        col2.html($('<p>').html(bookLine.name));
+                        col2.html($('<p>').html(bookLineDate.getDate() + '/' + bookLineDate.getMonth() + 1));
                         col3 = $('<a>', {
                             'href': '#modal-info',
                             'data-toggle': 'modal'
                         });
-                        col3.html($('<p>').html(bookLine.link));
-                        newLineEl.append($('<td>').html(col1), $('<td>').html(col2), $('<td>').html(col3));
-                        $('#history-list').find('tr.empty').before(newLineEl);
+                        col3.html($('<p>').html(bookLine.name));
+                        col4 = $('<a>', {
+                            'href': '#modal-info',
+                            'data-toggle': 'modal'
+                        });
+                        col4.html($('<p>').html(bookLine.link));
+                        newLineEl.append($('<td>').html(col1), $('<td>').html(col2), $('<td>').html(col3), $('<td>').html(col4));
+                        $('#history-list').append(newLineEl);
                     }
                 }
             });
