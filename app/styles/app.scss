@@ -7,7 +7,7 @@ html {
     body {
         .link-wrapper {
             display: block;
-            padding: 20px 10px;
+            padding: 20px 40px;
             text-align: center;
             a,
             input {
@@ -32,6 +32,16 @@ html {
         .center {
             text-align: center;
         }
+        .force-left,
+        .force-right {
+            position: absolute;
+        }
+        .force-left {
+            left: 0;
+        }
+        .force-right {
+            right: 0;
+        }
         .glyphicon {
             margin: 0 5px;
         }
@@ -44,23 +54,39 @@ html {
             h5,
             h6,
             p {
+                position: relative;
+                height: 42px;
                 margin: 0 auto;
                 padding: 10px 0;
                 @include clearfix();
                 text-align: center;
                 font-weight: 200;
+                line-height: 22px;
                 color: $app-bars-text;
                 background: $app-bars-background;
+                .force-left,
+                .force-right {
+                    top: 6px;
+                }
             }
             &.padded {
                 padding: 0 15px;
                 background: $app-bars-background;
+            }
+            &:not(.padded) {
+                h4,
+                h5,
+                h6,
+                p {
+                    padding: 10px 15px;
+                }
             }
         }
         #app-navbar {
             margin: 0;
         }
         #app-footer {
+            position: relative;
             padding: 0 15px;
             line-height: 42px;
             text-align: center;
@@ -68,6 +94,16 @@ html {
             overflow: hidden;
             color: $white;
             background: $app-bars-background;
+            h5,
+            div,
+            p {
+                position: relative;
+                margin: 0;
+            }
+            .force-left,
+            .force-right {
+                top: 6px;
+            }
         }
         #app-content {
             padding: 20px 0;
@@ -123,6 +159,36 @@ html {
                             height: 30px;
                             vertical-align:middle;
                         }
+                        &.legend-row {
+                            th {
+                                background: transparent;
+                                padding: 0 15px;
+                                .success,
+                                .warning,
+                                .danger {
+                                    padding: 8px 15px;
+                                    color: $app-bars-background;
+                                }
+                                .success {
+                                    background: rgb(223, 240, 216);
+                                    &:hover {
+                                        background: rgb(208, 233, 198);
+                                    }
+                                }
+                                .warning {
+                                    background: rgb(252, 248, 227);
+                                    &:hover {
+                                        background: rgb(250, 242, 204);
+                                    }
+                                }
+                                .danger {
+                                    background: rgb(242, 222, 222);
+                                    &:hover {
+                                        background: rgb(235, 204, 204);
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -134,8 +200,6 @@ html {
             #gps {
                 width: 100%;
                 min-height: 700px;
-                // background:url('../images/gps.png') no-repeat;
-                // background-size:100% auto;
             }
             .avatar {
                 background:#ccc;

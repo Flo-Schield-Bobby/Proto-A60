@@ -23,8 +23,13 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar' class='padded'>
-                <h5>Aide60 - ICX02
-                <a href='/pages/dialogue.html' class="btn btn-sm btn-danger pull-right"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a></h5>
+                <h5>
+                    <span>Aide60 - ICX02</span>
+                    <div class='force-right'>
+                        <a href='/pages/gps.html' class='btn btn-sm btn-default'><i class='glyphicon glyphicon-map-marker'></i> GPS</a>
+                        <a href='/pages/dialogue.html' class='btn btn-sm btn-warning'><i class='glyphicon glyphicon-warning-sign'></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
             <div id='app-navbar' class='navbar navbar-default'>
                 <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
@@ -48,7 +53,7 @@
             </div>
             <section id='app-content'>
                 <h6 class='block-centered'>Temps d'intervention</h6>
-                <h2 class='block-centered' id='app-timer'>00:00</h2>
+                <h2 class='block-centered'><span id='app-timer'>00:00</span></h2>
                 <div class='row'>
                     <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
                         <div class='link-wrapper'>
@@ -72,27 +77,27 @@
                     </div>
                 </div>
                 <div class='link-wrapper'>
-                    <a href='#modal-accept' data-toggle='modal' class='btn btn-danger btn-lg stop-session-link' data-stop='timer'>Cliquez-ici pour terminer l'intervention</a>
+                    <a href='#modal-accept' data-toggle='modal' class='btn btn-danger btn-lg' data-stop='timer'>Cliquez-ici pour terminer l'intervention</a>
                 </div>
             </section>
             <section id='app-modals'>
-            <div id='modal-accept' class='modal fade' role='dialog'>
-                <div class='modal-dialog'>
-                    <div class='modal-content'>
-                        <header class='modal-header'>
-                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
-                            <h4>Voulez-vous vraiment terminer l'intervention ?</h4>
-                        </header>
-                        <footer class='modal-footer'>
-                            <a href='/index.html' class='btn btn-success stop-session-link pull-right' data-stop='timer'>Oui</a>
-                            <a href='#' class='btn btn-danger pull-left' data-dismiss='modal'>Non</a>
-                        </footer>
+                <div id='modal-accept' class='modal fade' role='dialog'>
+                    <div class='modal-dialog'>
+                        <div class='modal-content'>
+                            <header class='modal-header'>
+                                <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
+                                <h4>Voulez-vous vraiment terminer l'intervention ?</h4>
+                            </header>
+                            <footer class='modal-footer'>
+                                <a href='#' class='btn btn-danger pull-left' data-dismiss='modal'>Non</a>
+                                <a href='/index.html' class='btn btn-success stop-session-link pull-right' data-stop='timer'>Oui</a>
+                            </footer>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
             <footer id='app-footer'>
-                <p>♥ from SIC-UxD</p>
+                <p>Hygie Application</p>
             </footer>
         </div>
         <!-- build:js /scripts/vendor.min.js -->
@@ -124,6 +129,7 @@
             $(function () {
                 $('.stop-session-link').on('click', function (e) {
                     localStorage.setItem('session-started', false);
+                    localStorage.setItem('notification-session-end', true);
                 });
             });
         </script>

@@ -23,8 +23,14 @@
         <![endif]-->
         <div class='container'>
             <header id='app-navigation-bar' class='padded'>
-                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a>Aide60 - ICX02
-                <a href='/pages/dialogue.html' class="btn btn-sm btn-danger pull-right"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a></h5>
+                <h5>
+                    <a href='/pages/session.html' class='btn btn-sm btn-default force-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <span>Aide60 - ICX02</span>
+                    <div class='force-right'>
+                        <a href='/pages/gps.html' class='btn btn-sm btn-default'><i class='glyphicon glyphicon-map-marker'></i> GPS</a>
+                        <a href='/pages/dialogue.html' class='btn btn-sm btn-warning'><i class='glyphicon glyphicon-warning-sign'></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
             <div id='app-navbar' class='navbar navbar-default'>
                 <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
@@ -135,8 +141,12 @@
                 </table>
             </section>
             <footer id='app-footer'>
-                <h5><a href='/pages/session.html' class='btn btn-sm btn-default pull-left stop-session-link' data-stop='timer'><i class="glyphicon glyphicon-chevron-left"></i></a></h5>
-                <p>♥ from SIC-UxD</p>
+                <div>
+                    <p>
+                        <a href='/pages/session.html' class='btn btn-sm btn-default force-left stop-session-link' data-stop='timer'><i class='glyphicon glyphicon-chevron-left'></i></a>
+                        <span>Hygie Application</span>
+                    </p>
+                </div>
             </footer>
         </div>
         <section id='app-modals'>
@@ -198,41 +208,31 @@ Nauséeux
                         </header>
                         <div class='modal-body'>
                             <form id='form-new-line' action='#' method='get' role='form'>
-                                <div class='checkbox'>
-                                    <label>
-                                        <input type='checkbox' value='' data-field-name='hasWokenUp'>
-                                            Lever
-                                    </label>
+                                <div class='form-group checkbox'>
+                                    <label><input type='checkbox' value='' data-field-name='hasWokenUp' /> Lever</label>
                                 </div>
-                                <div class='checkbox'>
-                                    <label>
-                                        <input type='checkbox' value='' data-field-name='hasBeenGroomed'>
-                                            Toilette
-                                    </label>
+                                <div class='form-group checkbox'>
+                                    <label><input type='checkbox' value='' data-field-name='hasBeenGroomed' /> Toilette</label>
                                 </div>
-                                <div class='checkbox'>
-                                    <label>
-                                        <input type='checkbox' value='' data-field-name='isShoppingDone'>
-                                            Courses
-                                    </label>
+                                <div class='form-group checkbox'>
+                                    <label><input type='checkbox' value='' data-field-name='isShoppingDone' /> Courses</label>
                                 </div>
-                                <div class='checkbox'>
-                                    <label>
-                                        <input type='checkbox' value='' data-field-name='hasHadBreakfast'>
-                                            Petit Déjeuner
-                                    </label>
+                                <div class='form-group checkbox'>
+                                    <label><input type='checkbox' value='' data-field-name='hasHadBreakfast' /> Petit Déjeuner</label>
                                 </div>
-                                <div>
-                                    <label>Commentaires</label>
-                                    <textarea class='form-control' rows='3' data-field-name='comments'></textarea>
+                                <div class='form-group'>
+                                    <label for='comments'>Commentaires</label>
+                                    <textarea class='form-control' rows='3' id='comments' data-field-name='comments'></textarea>
+                                </div>
+                                <div class='form-group'>
+                                    <input type='submit' class='btn btn-success' name='submit' value='Ajouter au cahier' />
                                 </div>
                             </form>
                         </div>
                         <footer class='modal-footer'>
                             <div class='link-wrapper'>
-                                    <input type='submit' class='btn btn-success' name='submit' data-dismiss='modal' value='Ajouter au cahier' />
-                                    <button class='btn btn-danger' data-dismiss='modal'>Annuler</a>
-                                </div>
+                                <a class='btn btn-danger pull-right' data-dismiss='modal'>Annuler</a>
+                            </div>
                         </footer>
                     </div>
                 </div>

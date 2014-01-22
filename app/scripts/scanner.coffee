@@ -41,11 +41,11 @@ class Scanner
 		#if Modernizr.getusermedia
 			#console.log Modernizr.prefixed('getUserMedia', navigator)
 			navigator.getMedia @constraints, (mediaStream) =>
-				@display(mediaStream)
+				console.log 'success', mediaStream
 				@successCallback.apply(@, [mediaStream])
-				setTimeout () =>
-					@decode()
-				, 500
+				# setTimeout () =>
+				# 	@decode()
+				# , 500
 			, (e) =>
 				@errorCallback.apply()
 		#else
@@ -81,4 +81,8 @@ $ ->
 			'video': true
 			'audio': false
 		}
+		'successCallback': (e) ->
+			console.log 'success', e
+		'errorCallback': (e) ->
+			console.log 'fail', e
 	}

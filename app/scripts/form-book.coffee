@@ -63,6 +63,7 @@ class FormBook
 	bind: () =>
 		@formEl.on {
 			'submit': (event) =>
+				console.log 'form new line submit'
 				event.preventDefault()
 				data = {
 					'hasWokenUp': false
@@ -76,7 +77,7 @@ class FormBook
 				@formEl.find('input:text, textarea, select').each () ->
 					data[$(@).data('field-name')] = $(@).val()
 				bookLine = new BookLine {
-					'name': 'Coluche'
+					'name': 'Moi'
 					'link': 'AD'
 					'hasWokenUp': data.hasWokenUp
 					'hasBeenGroomed': data.hasBeenGroomed
@@ -93,19 +94,26 @@ class FormBook
 					'href': '#modal-info'
 					'data-toggle': 'modal'
 				}
-				col1.html($('<p>').html(bookLine.date.getDate() + '/' + bookLine.date.getMonth() + 1))
+				col1.html($('<p>').html($('<i>', {
+					'class': 'glyphicon glyphicon-plus-sign'
+				})))
 				col2 = $ '<a>', {
 					'href': '#modal-info'
 					'data-toggle': 'modal'
 				}
-				col2.html($('<p>').html(bookLine.name))
+				col2.html($('<p>').html(bookLine.date.getDate() + '/' + bookLine.date.getMonth() + 1))
 				col3 = $ '<a>', {
 					'href': '#modal-info'
 					'data-toggle': 'modal'
 				}
-				col3.html($('<p>').html(bookLine.link))
-				newLineEl.append $('<td>').html(col1), $('<td>').html(col2), $('<td>').html(col3)
-				@listEl.find('tr.empty').before newLineEl
+				col3.html($('<p>').html(bookLine.name))
+				col4 = $ '<a>', {
+					'href': '#modal-info'
+					'data-toggle': 'modal'
+				}
+				col4.html($('<p>').html(bookLine.link))
+				newLineEl.append $('<td>').html(col1), $('<td>').html(col2), $('<td>').html(col3), $('<td>').html(col4)
+				@listEl.append newLineEl
 				$('#modal-new').modal 'hide'
 				@
 		}

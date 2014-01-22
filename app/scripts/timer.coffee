@@ -32,13 +32,13 @@ class Timer
 		@
 
 	display: () =>
-		secs = @timer % 60
-		if secs < 10
-			secs = '0' + secs
-		mins = parseInt @timer / 60
+		mins = 1 + parseInt @timer / 60
 		if mins < 10
 			mins = '0' + mins
-		@$timerLabel.text mins + ':' + secs
+		hours = parseInt @timer / 3600
+		if hours < 10
+			hours = '0' + hours
+		@$timerLabel.text hours + ':' + mins
 		@
 
 	launch: () =>
