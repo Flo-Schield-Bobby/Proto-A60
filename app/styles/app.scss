@@ -45,6 +45,14 @@ html {
         .glyphicon {
             margin: 0 5px;
         }
+        .row {
+            &.accolate {
+                margin: 0;
+                [class^="col"] {
+                    padding: 0;
+                }
+            }
+        }
         #app-navigation-bar,
         #app-footer {
             min-height: 42px;
