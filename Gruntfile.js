@@ -303,7 +303,9 @@ module.exports = function (grunt) {
                         'images/{,*/}*.{webp,gif,jpg,JPG,jpge,JPEG,png,PNG,gif,GIF}',
                         'sounds/{,*/}*.{mp3,ogg,wav}',
                         'styles/fonts/{,*/}*.*',
-                        'components/sass-bootstrap/fonts/*.*'
+                        'components/sass-bootstrap/fonts/*.*',
+                        'components/mapbox.js.compiled/mapbox.css',
+                        'components/mapbox.js.compiled/images/*.*',
                     ]
                 }]
             },
