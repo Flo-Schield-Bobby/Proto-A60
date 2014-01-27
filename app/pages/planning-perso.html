@@ -27,31 +27,10 @@
                     <a href='/pages/intro.html' class='btn btn-sm btn-default force-left stop-session-link' data-stop='timer'><i class='glyphicon glyphicon-chevron-left'></i></a>
                     <span>Aide60 - ICX02</span>
                     <div class='force-right'>
-                        <a href='/pages/gps.html' class='btn btn-sm btn-default'><i class='glyphicon glyphicon-map-marker'></i> GPS</a>
                         <a href='/pages/dialogue.html' class='btn btn-sm btn-warning'><i class='glyphicon glyphicon-warning-sign'></i> Contacter le bureau</a>
                     </div>
                 </h5>
             </header>
-            <div id='app-navbar' class='navbar navbar-default'>
-                <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
-                    <ul class='nav navbar-nav'>
-                        <li>
-                            <a id='home-link' href='/pages/intro.html'><i class='glyphicon glyphicon-home'></i></a>
-                        </li>
-                        <li>
-                            <a href='/pages/planning-perso.html'>Mon planning</a>
-                        </li>
-                        <li>
-                            <a href='/pages/fiches-perso.html'>Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class='nav navbar-nav navbar-right'>
-                        <li>
-                            <a href='#'>Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <section id='app-content'>
                 <h2 class='block-centered'>Mon Planning</h2>
                 <table class='table table-hover table-planning'>
@@ -258,7 +237,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td class='danger' rowspan='2'><a href='#modal-validate' data-toggle='modal'><i class='glyphicon glyphicon-warning-sign pull-left'></i>  Mme T</a></td>
+                            <td class='danger' rowspan='2'><a href='#modal-info' data-toggle='modal'><i class='glyphicon glyphicon-warning-sign pull-left'></i>  Mme T</a></td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -384,31 +363,6 @@
                         </div>
                         <footer class='modal-footer'>
                             <a href='#' data-dismiss='modal' class='btn btn-primary'>Fermer</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div id='modal-validate' class='modal fade' role='dialog'>
-                <div class='modal-dialog'>
-                    <div class='modal-content'>
-                        <header class='modal-header'>
-                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
-                            <h4></h4>
-                        </header>
-                        <div class='modal-body'>
-                            <p>Mr A<br />
-                            13 rue des Acacias<br />
-                            60200 Compiègne</p>
-
-                            <p><a href='/pages/gps.html' class='btn btn-default'><i class='glyphicon glyphicon-map-marker'></i> GPS</a></p>
-
-                            <p>11h15 - 12h15<br />
-                            Intervention Sociale<br />
-                            Détails : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <footer class='modal-footer'>
-                            <a href='#' class='btn btn-success' data-dismiss='modal'>Accepter</a>
-                            <a href='/pages/dialogue.html' class='btn btn-danger'>Alerter d'un problème</a>
                         </footer>
                     </div>
                 </div>
