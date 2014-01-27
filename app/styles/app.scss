@@ -48,6 +48,9 @@ html {
         .sided {
             padding: 0 20px;
         }
+        .clearfix {
+            @include clearfix();
+        }
         .row {
             &.accolate {
                 margin: 0;
