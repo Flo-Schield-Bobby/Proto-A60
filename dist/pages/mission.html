@@ -20,7 +20,7 @@
         <div class="container">
             <header id="app-navigation-bar" class="padded">
                 <h5>
-                    <a href="/pages/session.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a href="/pages/intro.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
                     <span>Aide60 - ICX02</span>
                     <div class="force-right">
                         <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
@@ -96,6 +96,13 @@
         </div>
         <script src="/scripts/3c41dca9.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                if (localStorage.getItem('session-started') == 'true') {
+                    $('.stop-session-link').attr('href', '/pages/session.html');
+                }
+            });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

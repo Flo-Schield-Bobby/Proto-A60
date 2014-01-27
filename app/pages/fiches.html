@@ -33,11 +33,14 @@
             </header>
             <section id='app-content'>
                 <h2 class='block-centered'>Fiches de Mr Lagnez</h2>
+                <div class="link-wrapper pull-right">
+                    <a href="/pages/form.html" class="btn btn-primary btn-md"><i class="glyphicon glyphicon-plus"></i> Ajouter une fiche</a>
+                </div>
                 <table id='history-list' class='table table-hover table-bordered'>
                     <thead>
                         <tr>
-                            <th>Salarié</th>
                             <th>Bénéficiaire</th>
+                            <th>Salarié</th>
                             <th>Date</th>
                             <th>Objet</th>
                             <th>Respondable de service</th>
@@ -46,9 +49,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Moi</td>
+                            <td>M. Lagnez</td>
                             <td>
-                                <a href='#benef-fiches' data-toggle='modal'><p>Marianne Bourgeon</p></a>
+                                <p>Moi</p>
                             </td>
                             <td>
                                 <p>02/12</p>
@@ -64,8 +67,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Moi</td>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Jeanne Girard</p></a></td>
+                            <td>M. Lagnez</td>
+                            <td><p>Christine Maudin</p></td>
                             <td>
                                 <p>02/12</p>
                             </td>
@@ -80,8 +83,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Moi</td>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Hervé Girard</p></a></td>
+                            <td>M. Lagnez</td>
+                            <td><p>Jean Petit</p></td>
                             <td>
                                 <p>02/12</p>
                             </td>
@@ -96,8 +99,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Moi</td>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Farida Kader</p></a></td>
+                            <td>M. Lagnez</td>
+                            <td><p>Moi</p></td>
                             <td>
                                 <p>02/12</p>
                             </td>
@@ -112,8 +115,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Moi</td>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Bernard Belin</p></a></td>
+                            <td>M. Lagnez</td>
+                            <td><p>Moi</p></td>
                             <td>
                                 <p>02/12</p>
                             </td>
@@ -126,46 +129,6 @@
                             <td>
                                 <a href='#modal-icon' data-toggle='modal'><i class="glyphicon glyphicon-refresh"></i></a>
                             </td>
-                        </tr>
-                        <tr class='empty'>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
-                            <td><a href='/pages/form.html' data-toggle='modal'></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -180,141 +143,6 @@
             </footer>
         </div>
         <section id='app-modals'>
-            <div id='benef-fiches' class='modal fade' role='dialog'>
-                <div class='modal-dialog'>
-                    <div class='modal-content'>
-                        <header class='modal-header'>
-                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
-                            <h4>Fiches bénéficiaire</h4>
-                        </header>
-                        <div class='modal-body'>
-                            <table id='history-list' class='table table-hover table-bordered'>
-                                <thead>
-                                    <tr>
-                                        <th>Salarié</th>
-                                        <th>Bénéficiaire</th>
-                                        <th>Date</th>
-                                        <th>Objet</th>
-                                        <th>Responsable de service</th>
-                                        <th>Responsable de qualité</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="dropdown">
-                                                <a data-toggle="dropdown" href="#">Jean Pousy</a>
-                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                                    <li>Julien Pousy</li>
-                                                    <li>Cuisine - Aménagement</li>
-                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 89 48 10</li>
-                                                    <li><i class="glyphicon glyphicon-envelope"></i> julien.pousy@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p>Hervé Girard</p>
-                                        </td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <a href='#modal-infos' data-toggle='modal'><p>Toilettes</p></a>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-ok"></i>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-eye-close"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="dropdown">
-                                                <a data-toggle="dropdown" href="#">Natalie Dufour</a>
-                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                                    <li>Natalie Dufour</li>
-                                                    <li>Salle de bain - Aménagement</li>
-                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 90 38 30</li>
-                                                    <li><i class="glyphicon glyphicon-envelope"></i> natalie.dufour@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>Hervé Girard</td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <a href='#modal-infos' data-toggle='modal'><p>Demande d'un tapis anti-dérapant</p></a>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-eye-close"></i>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-refresh"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="dropdown">
-                                                <a data-toggle="dropdown" href="#">Melanie Dupuis</a>
-                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                                    <li>Melanie Dupuis</li>
-                                                    <li>Cuisine - Aménagement</li>
-                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 80 48 20</li>
-                                                    <li><i class="glyphicon glyphicon-envelope"></i> melanie.dupuis@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>Hervé Girard</td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <a href='#modal-infos' data-toggle='modal'><p>Communication avec le médecin</p></a>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-remove"></i>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-eye-open"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="dropdown">
-                                                <a data-toggle="dropdown" href="#">Remy Froisse</a>
-                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                                    <li>Remy Froisse</li>
-                                                    <li>Salle de bain - Aménagement</li>
-                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 80 48 20</li>
-                                                    <li><i class="glyphicon glyphicon-envelope"></i> remy.froisse@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>Hervé Girard</td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <p></p>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-eye-close"></i>
-                                        </td>
-                                        <td>
-                                            <i class="glyphicon glyphicon-refresh"></i>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <footer class='modal-footer'>
-                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Revenir aux fiches</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
             <div id='modal-icon' class='modal fade' role='dialog'>
                 <div class='modal-dialog'>
                     <div class='modal-content'>
@@ -341,7 +169,7 @@
                                     </tr>
                                     <tr>
                                         <td>22/02</td>
-                                        <td>Formulaire transmis à l'EHPAD</td>
+                                        <td>Formulaire transmis</td>
                                     </tr>
                                 </tbody>
                             </table>

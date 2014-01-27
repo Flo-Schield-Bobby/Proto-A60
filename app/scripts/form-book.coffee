@@ -63,7 +63,6 @@ class FormBook
 	bind: () =>
 		@formEl.on {
 			'submit': (event) =>
-				console.log 'form new line submit'
 				event.preventDefault()
 				data = {
 					'hasWokenUp': false
