@@ -20,6 +20,7 @@
         <div class="container">
             <header id="app-navigation-bar" class="padded">
                 <h5>
+                    <a href="/pages/intro.html" class="btn btn-sm btn-default force-left"><i class="glyphicon glyphicon-chevron-left"></i></a>
                     <span>Aide60 - ICX02</span>
                     <div class="force-right">
                         <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
@@ -51,49 +52,15 @@
                 </div>
             </div>
             <section id="app-content">
-                <h6 class="block-centered">Temps d'intervention</h6>
-                <h2 class="block-centered"><span id="app-timer">0</span> minute(s)</h2>
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="link-wrapper">
-                            <a href="/pages/mission.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-th-list"></i><br>Fiche<br>Mission</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="link-wrapper">
-                            <a href="/pages/planning.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-calendar"></i><br>Planning<br>Bénéficiaire</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="link-wrapper">
-                            <a href="/pages/cahier.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-book"></i> <br> Cahier de<br>liaison</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="link-wrapper">
-                            <a href="/pages/fiches.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-list-alt"></i><br>Fiches <br>Bénéficiaires</a>
-                        </div>
-                    </div>
-                </div>
+                <figure class="block-centered">
+                    <img id="qrcode" src="/images/ec48dd59.qrcode-a60.png" alt="Aide 60">
+                    <figcaption>Flashez le QRCode du bénéficiaire</figcaption>
+                </figure>
                 <div class="link-wrapper">
-                    <a href="#modal-accept" data-toggle="modal" class="btn btn-danger btn-lg" data-stop="timer">Cliquez-ici pour terminer l'intervention</a>
+                    <a id="end-session-link" href="/index.html" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-camera"></i></a>
                 </div>
             </section>
             <section id="app-modals">
-                <div id="modal-accept" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <header class="modal-header">
-                                <a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
-                                <h4>Voulez-vous vraiment terminer l'intervention ?</h4>
-                            </header>
-                            <footer class="modal-footer">
-                                <a href="#" class="btn btn-danger pull-left" data-dismiss="modal">Non</a>
-                                <a href="/pages/scan-end.html" class="btn btn-success stop-session-link pull-right" data-stop="timer">Oui</a>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
                 <div id="modal-tms" class="modal fade" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -119,12 +86,12 @@
         </div>
         <script src="/scripts/3c41dca9.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
-        <script src="/scripts/e29b674b.timer.min.js"></script>
         <script>
             $(function () {
-                $('.stop-session-link').on('click', function (e) {
+                $('#end-session-link').on('click', function (e) {
+                    e.preventDefault();
                     localStorage.setItem('session-started', false);
-                    localStorage.setItem('notification-session-end', true);
+                    window.location.href = $(this).attr('href');
                 });
             });
         </script>
