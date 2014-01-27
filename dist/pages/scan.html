@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="/styles/1e4b0774.app.min.css"/>
+        <link rel="stylesheet" href="/styles/85192311.app.min.css"/>
         <script src="/scripts/vendor/1a5317ff.modernizr.js"></script>
     </head>
     <body>
@@ -19,45 +19,73 @@
         <![endif]-->
         <div class="container">
             <header id="app-navigation-bar" class="padded">
-                <h5><a href="/index.html" class="btn btn-default pull-left"><i class="glyphicon glyphicon-home"></i></a></h5>
+                <h5>
+                    <a href="/pages/intro.html" class="btn btn-sm btn-default force-left"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <span>Aide60 - ICX02</span>
+                    <div class="force-right">
+                        <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
-            <div id="app-navbar" class="navbar navbar-default">
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/pages/intro.html"><i class="glyphicon glyphicon-home"></i></a>
-                        </li>
-                        <li>
-                            <a href="/pages/planning-perso.html">Mon planning</a>
-                        </li>
-                        <li>
-                            <a href="/pages/fiches-perso.html">Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div id="personnal-menu">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="/pages/planning-perso.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-calendar"></i><br>Mon planning</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="/pages/fiches-perso.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-file"></i><br>Mes fiches</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="/pages/gps.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-map-marker"></i><br>GPS</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="#modal-tms" data-toggle="modal" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-book"></i><br>Guide TMS</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <section id="app-content">
                 <figure class="block-centered">
-                    <video width="320" height="240" autoplay="" id="camera-screen"></video>
-                    <canvas width="320" height="240" id="qr-code-canvas"></canvas>
+                    <img src="/images/ec48dd59.qrcode-a60.png" alt="Aide 60">
+                    <figcaption>Flashez le QRCode du bénéficiaire</figcaption>
                 </figure>
                 <div class="link-wrapper">
                     <a id="start-session-link" href="/pages/courses.html" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-camera"></i></a>
                 </div>
             </section>
+            <section id="app-modals">
+                <div id="modal-tms" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="modal-header">
+                                <a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+                                <h4>Equilibrez les sacs même si c'est la course !</h4>
+                            </header>
+                            <div class="modal-body">
+                                <figure class="center TMS-wrapper">
+                                    <img src="/images/TMS/c8d85242.courses.jpg" alt="TMS">
+                                </figure>
+                            </div>
+                            <footer class="modal-footer">
+                                <a href="#" class="btn btn-primary pull-right" data-dismiss="modal">Fermer</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <footer id="app-footer">
-                <p>♥ from SIC-UxD</p>
+                <p>Hygie Application</p>
             </footer>
         </div>
         <script src="/scripts/4b31fe14.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
-        <script src="/scripts/0a693795.jsqrcode.min.js"></script>
-        <script src="/scripts/c0f8116f.scanner.min.js"></script>
         <script>
             $(function () {
                 $('#start-session-link').on('click', function (e) {

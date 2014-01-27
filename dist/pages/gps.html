@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="/styles/1e4b0774.app.min.css"/>
+        <link rel="stylesheet" href="/styles/85192311.app.min.css"/>
         <link rel="stylesheet" href="/components/mapbox.js.compiled/mapbox.css"/>
         <script src="/scripts/vendor/1a5317ff.modernizr.js"></script>
     </head>
@@ -20,39 +20,64 @@
         <![endif]-->
         <div class="container">
             <header id="app-navigation-bar" class="padded">
-                <h5><a href="/pages/planning.html" class="btn btn-default pull-left">Retour</a></h5>
+                <h5>
+                    <a href="/pages/intro.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <span>Aide60 - ICX02</span>
+                    <div class="force-right">
+                        <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
-            <div id="app-navbar" class="navbar navbar-default">
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/pages/session.html"><i class="glyphicon glyphicon-home"></i></a>
-                        </li>
-                        <li>
-                            <a href="/pages/planning-perso.html">Mon planning</a>
-                        </li>
-                        <li>
-                            <a href="/pages/fiches-perso.html">Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <section id="app-content">
-                <div id="gps"></div>
+                <div class="row accolate">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div id="addresses-selector" class="list-group">
+                            <a href="#" class="list-group-item active" data-coords-lat="49.4106139" data-coords-lng="2.8172449" data-address="32 bd des Etats-Unis">
+                                <h6 class="list-group-item-heading">Marianne Bourgeon</h6>
+                                <p class="list-group-item-text">32 bd des Etats-Unis</p>
+                            </a>
+                            <a href="#" class="list-group-item" data-coords-lat="49.4240217" data-coords-lng="2.8355944" data-address="67 rue Augustin Thierry">
+                                <h6 class="list-group-item-heading">Jeanne Girard</h6>
+                                <p class="list-group-item-text">67 rue Augustin Thierry</p>
+                            </a>
+                            <a href="#" class="list-group-item" data-coords-lat="49.40994" data-coords-lng="2.8340371" data-address="155 rue Saint-Lazare">
+                                <h6 class="list-group-item-heading">Hervé Girard</h6>
+                                <p class="list-group-item-text">155 rue Saint-Lazare</p>
+                            </a>
+                            <a href="#" class="list-group-item" data-coords-lat="49.41063" data-coords-lng="2.8143822" data-address="15 rue Saint-Germain">
+                                <h6 class="list-group-item-heading">Farida Kader</h6>
+                                <p class="list-group-item-text">15 rue Saint-Germain</p>
+                            </a>
+                            <a href="#" class="list-group-item" data-coords-lat="49.3998439" data-coords-lng="2.8084426" data-address="8 rue de Picardie">
+                                <h6 class="list-group-item-heading">Bernard Belin</h6>
+                                <p class="list-group-item-text">8 rue de Picardie</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <div id="gps"></div>
+                    </div>
+                </div>
             </section>
             <footer id="app-footer">
-                <h5><a href="/pages/planning.html" class="btn btn-default pull-left">Retour</a></h5>
-                <p>♥ from SIC-UxD</p>
+                <div>
+                    <p>
+                        <a href="/pages/intro.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <span>Hygie Application</span>
+                    </p>
+                </div>
             </footer>
         </div>
         <script src="/scripts/4b31fe14.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
-        <script src="/scripts/f4968180.gps.min.js"></script>
+        <script src="/scripts/aa4da4a4.gps.min.js"></script>
+        <script>
+            $(function () {
+                if (localStorage.getItem('session-started') == 'true') {
+                    $('.stop-session-link').attr('href', '/pages/session.html');
+                }
+            });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

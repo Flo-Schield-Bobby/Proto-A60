@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="/styles/1e4b0774.app.min.css"/>
+        <link rel="stylesheet" href="/styles/85192311.app.min.css"/>
         <script src="/scripts/vendor/1a5317ff.modernizr.js"></script>
     </head>
     <body>
@@ -19,35 +19,31 @@
         <![endif]-->
         <div class="container">
             <header id="app-navigation-bar" class="padded">
-                <h5>Aide60 - ICX02</h5>
+                <h5>
+                    <a href="/pages/intro.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <span>Aide60 - ICX02</span>
+                    <div class="force-right">
+                        <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
-            <div id="app-navbar" class="navbar navbar-default">
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a id="home-link" href="/pages/intro.html"><i class="glyphicon glyphicon-home"></i></a>
-                        </li>
-                        <li>
-                            <a href="/pages/planning-perso.html">Mon planning</a>
-                        </li>
-                        <li>
-                            <a href="/pages/fiches-perso.html">Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <section id="app-content">
-                <h2 class="block-centered">Votre Planning</h2>
+                <h2 class="block-centered">Mon Planning</h2>
                 <table class="table table-hover table-planning">
                     <thead>
                         <tr>
                             <th colspan="8">Du 6 au 13 janvier 2014</th>
-                        </tr><tr>
+                        </tr>
+                        <tr class="legend-row">
+                            <th colspan="8">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 success">Intervention sociale</div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 warning">Intervention ménagère</div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 danger">Changement d'intervention</div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
                             <th></th>
                             <th>Lundi</th>
                             <th>Mardi</th>
@@ -237,7 +233,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td class="danger" rowspan="2"><a href="#modal-validate" data-toggle="modal"><i class="glyphicon glyphicon-warning-sign pull-left"></i>  Mme T</a></td>
+                            <td class="danger" rowspan="2"><a href="#modal-info" data-toggle="modal"><i class="glyphicon glyphicon-warning-sign pull-left"></i>  Mme T</a></td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -317,8 +313,12 @@
                 </table>
             </section>
             <footer id="app-footer">
-                <h5><a href="/pages/session.html" class="btn btn-default pull-left">Retour</a></h5>
-                <p>♥ from SIC-UxD</p>
+                <div>
+                    <p>
+                        <a href="/pages/intro.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <span>Hygie Application</span>
+                    </p>
+                </div>
             </footer>
         </div>
         <section id="app-modals">
@@ -330,43 +330,35 @@
                             <h4></h4>
                         </header>
                         <div class="modal-body">
-                            <p>Mr A<br>
+                            <p>Mr Lagnez<br>
                             13 rue des Acacias<br>
                             60200 Compiègne</p>
 
-                            <p><a href="/pages/gps.html" class="btn btn-default"><i class="glyphicon glyphicon-map-marker"></i> GPS</a></p>
-
                             <p>11h15 - 12h15<br>
                             Intervention Sociale<br>
-                            Détails : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </p>
+
+                            <p>Personne à contacter en cas de problème :<br>
+                            Mme Lagnez <br>
+                            06 09 93 90 02
+                            </p>
+
+                            <p>Détails pour l'accès :<br>
+                            Porte juste à côté de la pharmacie
+                            </p>
+
+                            <div class="link-wrapper">
+                                <p>
+                                    <a href="/pages/gps.html" class="btn btn-primary"><i class="glyphicon glyphicon-map-marker"></i> GPS</a>
+                                <a href="/pages/mission.html" class="btn btn-primary">Accéder à la fiche mission</a>
+                                </p>
+                                <p>
+                                    <a href="/pages/dialogue.html" class="btn btn-danger"><i class="glyphicon glyphicon-warning-sign"></i> Alerter le bureau</a>
+                                </p>
+                            </div>
                         </div>
                         <footer class="modal-footer">
-                            <a href="/pages/dialogue.html" class="btn btn-danger"><i class="glyphicon glyphicon-warning-sign"></i> Alerter le bureau</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div id="modal-validate" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <header class="modal-header">
-                            <a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
-                            <h4></h4>
-                        </header>
-                        <div class="modal-body">
-                            <p>Mr A<br>
-                            13 rue des Acacias<br>
-                            60200 Compiègne</p>
-
-                            <p><a href="/pages/gps.html" class="btn btn-default"><i class="glyphicon glyphicon-map-marker"></i> GPS</a></p>
-
-                            <p>11h15 - 12h15<br>
-                            Intervention Sociale<br>
-                            Détails : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                        <footer class="modal-footer">
-                            <a href="#" class="btn btn-success" data-dismiss="modal">Accepter</a>
-                            <a href="/pages/dialogue.html" class="btn btn-danger">Alerter d'un problème</a>
+                            <a href="#" data-dismiss="modal" class="btn btn-primary">Fermer</a>
                         </footer>
                     </div>
                 </div>
@@ -377,7 +369,7 @@
         <script>
             $(function () {
                 if (localStorage.getItem('session-started') == 'true') {
-                    $('#home-link').attr('href', '/pages/session.html');
+                    $('.stop-session-link').attr('href', '/pages/session.html');
                 }
             });
         </script>

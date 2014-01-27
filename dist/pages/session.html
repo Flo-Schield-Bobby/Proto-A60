@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="/styles/1e4b0774.app.min.css"/>
+        <link rel="stylesheet" href="/styles/85192311.app.min.css"/>
         <script src="/scripts/vendor/1a5317ff.modernizr.js"></script>
     </head>
     <body>
@@ -19,31 +19,40 @@
         <![endif]-->
         <div class="container">
             <header id="app-navigation-bar" class="padded">
-                <h5><a href="/pages/scan.html" class="btn btn-default pull-left stop-session-link" data-stop="timer">Scan</a></h5>
+                <h5>
+                    <span>Aide60 - ICX02</span>
+                    <div class="force-right">
+                        <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
-            <div id="app-navbar" class="navbar navbar-default">
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/pages/session.html"><i class="glyphicon glyphicon-home"></i></a>
-                        </li>
-                        <li>
-                            <a href="/pages/planning-perso.html">Mon planning</a>
-                        </li>
-                        <li>
-                            <a href="/pages/fiches-perso.html">Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div id="personnal-menu">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="/pages/planning-perso.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-calendar"></i><br>Mon planning</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="/pages/fiches-perso.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-file"></i><br>Mes fiches</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="/pages/gps.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-map-marker"></i><br>GPS</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="link-wrapper">
+                            <a href="#modal-tms" data-toggle="modal" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-book"></i><br>Guide TMS</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <section id="app-content">
                 <h6 class="block-centered">Temps d'intervention</h6>
-                <h2 class="block-centered" id="app-timer">00:00</h2>
+                <h2 class="block-centered"><span id="app-timer">00:00</span></h2>
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         <div class="link-wrapper">
@@ -62,25 +71,60 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         <div class="link-wrapper">
-                            <a href="/pages/fiches.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-list-alt"></i><br> Mes<br>Fiches</a>
+                            <a href="/pages/fiches.html" class="btn btn-default btn-lg btn-cta"><i class="glyphicon glyphicon-list-alt"></i><br>Fiches <br>Bénéficiaires</a>
                         </div>
                     </div>
                 </div>
                 <div class="link-wrapper">
-                    <a href="/index.html" class="btn btn-danger btn-lg stop-session-link" data-stop="timer">Terminer l'intervention</a>
+                    <a href="#modal-accept" data-toggle="modal" class="btn btn-danger btn-lg" data-stop="timer">Cliquez-ici pour terminer l'intervention</a>
+                </div>
+            </section>
+            <section id="app-modals">
+                <div id="modal-accept" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="modal-header">
+                                <a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+                                <h4>Voulez-vous vraiment terminer l'intervention ?</h4>
+                            </header>
+                            <footer class="modal-footer">
+                                <a href="#" class="btn btn-danger pull-left" data-dismiss="modal">Non</a>
+                                <a href="/index.html" class="btn btn-success stop-session-link pull-right" data-stop="timer">Oui</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-tms" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="modal-header">
+                                <a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+                                <h4>Equilibrez les sacs même si c'est la course !</h4>
+                            </header>
+                            <div class="modal-body">
+                                <figure class="center TMS-wrapper">
+                                    <img src="/images/TMS/c8d85242.courses.jpg" alt="TMS">
+                                </figure>
+                            </div>
+                            <footer class="modal-footer">
+                                <a href="#" class="btn btn-primary pull-right" data-dismiss="modal">Fermer</a>
+                            </footer>
+                        </div>
+                    </div>
                 </div>
             </section>
             <footer id="app-footer">
-                <p>♥ from SIC-UxD</p>
+                <p>Hygie Application</p>
             </footer>
         </div>
         <script src="/scripts/4b31fe14.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
-        <script src="/scripts/fcf75a76.timer.min.js"></script>
+        <script src="/scripts/fa96be74.timer.min.js"></script>
         <script>
             $(function () {
                 $('.stop-session-link').on('click', function (e) {
                     localStorage.setItem('session-started', false);
+                    localStorage.setItem('notification-session-end', true);
                 });
             });
         </script>

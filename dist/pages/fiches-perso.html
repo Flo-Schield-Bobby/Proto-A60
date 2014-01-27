@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="/styles/1e4b0774.app.min.css"/>
+        <link rel="stylesheet" href="/styles/85192311.app.min.css"/>
         <script src="/scripts/vendor/1a5317ff.modernizr.js"></script>
     </head>
     <body>
@@ -19,28 +19,14 @@
         <![endif]-->
         <div class="container">
             <header id="app-navigation-bar" class="padded">
-                <h5>Aide60 - ICX02</h5>
+                <h5>
+                    <a href="/pages/intro.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <span>Aide60 - ICX02</span>
+                    <div class="force-right">
+                        <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
-            <div id="app-navbar" class="navbar navbar-default">
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a id="home-link" href="/pages/intro.html"><i class="glyphicon glyphicon-home"></i></a>
-                        </li>
-                        <li>
-                            <a href="/pages/planning-perso.html">Mon planning</a>
-                        </li>
-                        <li>
-                            <a href="/pages/fiches-perso.html">Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <section id="app-content">
                 <h2 class="block-centered">Mes fiches</h2>
                 <table id="history-list" class="table table-hover table-bordered">
@@ -141,8 +127,12 @@
                 </table>
             </section>
             <footer id="app-footer">
-                <h5><a href="/pages/session.html" class="btn btn-default pull-left">Retour</a></h5>
-                <p>♥ from SIC-UxD</p>
+                <div>
+                    <p>
+                        <a href="/pages/intro.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <span>Hygie Application</span>
+                    </p>
+                </div>
             </footer>
         </div>
         <section id="app-modals">
@@ -155,125 +145,125 @@
                         </header>
                         <div class="modal-body">
                             <table id="history-list" class="table table-hover table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Salarié</th>
-                            <th>Bénéficiaire</th>
-                            <th>Date</th>
-                            <th>Objet</th>
-                            <th>Respondable de service</th>
-                            <th>Responsable de qualité</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="dropdown">
-                                    <a data-toggle="dropdown" href="#">Jean Pousy</a>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                        <li>Julien Pousy</li>
-                                        <li>Cuisine - Aménagement</li>
-                                        <li><i class="glyphicon glyphicon-earphone"></i> 06 29 89 48 10</li>
-                                        <li><i class="glyphicon glyphicon-envelope"></i> julien.pousy@gmail.com</li>
-                                    </ul>
-                                </div>
-                            </td>
-                            <td>
-                                <p>Hervé Girard</p>
-                            </td>
-                            <td>
-                                <p>02/12</p>
-                            </td>
-                            <td>
-                                <p>Toilettes</p>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-eye-close"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="dropdown">
-                                    <a data-toggle="dropdown" href="#">Natalie Dufour</a>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                        <li>Natalie Dufour</li>
-                                        <li>Salle de bain - Aménagement</li>
-                                        <li><i class="glyphicon glyphicon-earphone"></i> 06 29 90 38 30</li>
-                                        <li><i class="glyphicon glyphicon-envelope"></i> natalie.dufour@gmail.com</li>
-                                    </ul>
-                                </div>
-                            </td>
-                            <td>Hervé Girard</td>
-                            <td>
-                                <p>02/12</p>
-                            </td>
-                            <td>
-                                <p>Demande d'un tapis anti-dérapant</p>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-eye-close"></i>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-refresh"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="dropdown">
-                                    <a data-toggle="dropdown" href="#">Melanie Dupuis</a>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                        <li>Melanie Dupuis</li>
-                                        <li>Cuisine - Aménagement</li>
-                                        <li><i class="glyphicon glyphicon-earphone"></i> 06 29 80 48 20</li>
-                                        <li><i class="glyphicon glyphicon-envelope"></i> melanie.dupuis@gmail.com</li>
-                                    </ul>
-                                </div>
-                            </td>
-                            <td>Hervé Girard</td>
-                            <td>
-                                <p>02/12</p>
-                            </td>
-                            <td>
-                                <p>Communication avec le médecin</p>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-remove"></i>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-eye-open"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="dropdown">
-                                    <a data-toggle="dropdown" href="#">Remy Froisse</a>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                                        <li>Remy Froisse</li>
-                                        <li>Salle de bain - Aménagement</li>
-                                        <li><i class="glyphicon glyphicon-earphone"></i> 06 29 80 48 20</li>
-                                        <li><i class="glyphicon glyphicon-envelope"></i> remy.froisse@gmail.com</li>
-                                    </ul>
-                                </div>
-                            </td>
-                            <td>Hervé Girard</td>
-                            <td>
-                                <p>02/12</p>
-                            </td>
-                            <td>
-                                <p></p>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-eye-close"></i>
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-refresh"></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <thead>
+                                    <tr>
+                                        <th>Salarié</th>
+                                        <th>Bénéficiaire</th>
+                                        <th>Date</th>
+                                        <th>Objet</th>
+                                        <th>Respondable de service</th>
+                                        <th>Responsable de qualité</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a data-toggle="dropdown" href="#">Jean Pousy</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                    <li>Julien Pousy</li>
+                                                    <li>Cuisine - Aménagement</li>
+                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 89 48 10</li>
+                                                    <li><i class="glyphicon glyphicon-envelope"></i> julien.pousy@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>Hervé Girard</p>
+                                        </td>
+                                        <td>
+                                            <p>02/12</p>
+                                        </td>
+                                        <td>
+                                            <p>Toilettes</p>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-ok"></i>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-eye-close"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a data-toggle="dropdown" href="#">Natalie Dufour</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                    <li>Natalie Dufour</li>
+                                                    <li>Salle de bain - Aménagement</li>
+                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 90 38 30</li>
+                                                    <li><i class="glyphicon glyphicon-envelope"></i> natalie.dufour@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>Hervé Girard</td>
+                                        <td>
+                                            <p>02/12</p>
+                                        </td>
+                                        <td>
+                                            <p>Demande d'un tapis anti-dérapant</p>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-eye-close"></i>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-refresh"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a data-toggle="dropdown" href="#">Melanie Dupuis</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                    <li>Melanie Dupuis</li>
+                                                    <li>Cuisine - Aménagement</li>
+                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 80 48 20</li>
+                                                    <li><i class="glyphicon glyphicon-envelope"></i> melanie.dupuis@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>Hervé Girard</td>
+                                        <td>
+                                            <p>02/12</p>
+                                        </td>
+                                        <td>
+                                            <p>Communication avec le médecin</p>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-remove"></i>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-eye-open"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a data-toggle="dropdown" href="#">Remy Froisse</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                    <li>Remy Froisse</li>
+                                                    <li>Salle de bain - Aménagement</li>
+                                                    <li><i class="glyphicon glyphicon-earphone"></i> 06 29 80 48 20</li>
+                                                    <li><i class="glyphicon glyphicon-envelope"></i> remy.froisse@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>Hervé Girard</td>
+                                        <td>
+                                            <p>02/12</p>
+                                        </td>
+                                        <td>
+                                            <p></p>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-eye-close"></i>
+                                        </td>
+                                        <td>
+                                            <i class="glyphicon glyphicon-refresh"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <footer class="modal-footer">
                             <a href="#" class="btn btn-primary" data-dismiss="modal">Revenir aux fiches</a>
@@ -377,7 +367,6 @@
                         </header>
                         <div class="modal-body">
                             Nous avons remarqué le manque d'un tapis anti-dérapant dans la salle de bain du bénificiaire qui permetterait de l'empêcher de glisser à la sortie de sa douche.
-                           
                         </div>
                         <footer class="modal-footer">
                             <a href="#" class="btn btn-primary" data-dismiss="modal">Fermer</a>
@@ -388,11 +377,11 @@
         </section>
         <script src="/scripts/4b31fe14.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
-        <script src="/scripts/8c42c5e6.form-book.min.js"></script>
+        <script src="/scripts/67135dd4.form-book.min.js"></script>
         <script>
             $(function () {
                 if (localStorage.getItem('session-started') == 'true') {
-                    $('#home-link').attr('href', '/pages/session.html');
+                    $('.stop-session-link').attr('href', '/pages/session.html');
                 }
             });
         </script>

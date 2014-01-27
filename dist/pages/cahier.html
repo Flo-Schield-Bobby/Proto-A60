@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="/styles/1e4b0774.app.min.css"/>
+        <link rel="stylesheet" href="/styles/85192311.app.min.css"/>
         <script src="/scripts/vendor/1a5317ff.modernizr.js"></script>
     </head>
     <body>
@@ -19,33 +19,23 @@
         <![endif]-->
         <div class="container">
             <header id="app-navigation-bar" class="padded">
-                <h5><a href="/pages/session.html" class="btn btn-default pull-left">Retour</a></h5>
+                <h5>
+                    <a href="/pages/session.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <span>Aide60 - ICX02</span>
+                    <div class="force-right">
+                        <a href="/pages/dialogue.html" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Contacter le bureau</a>
+                    </div>
+                </h5>
             </header>
-            <div id="app-navbar" class="navbar navbar-default">
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/pages/session.html"><i class="glyphicon glyphicon-home"></i></a>
-                        </li>
-                        <li>
-                            <a href="/pages/planning-perso.html">Mon planning</a>
-                        </li>
-                        <li>
-                            <a href="/pages/fiches-perso.html">Mes fiches</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">Guide des risques professionnels</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <section id="app-content">
                 <h2 class="block-centered">Cahier de liaison</h2>
+                <div class="link-wrapper pull-right">
+                    <a href="#modal-new" data-toggle="modal" class="btn btn-primary btn-md stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-plus"></i> Ajouter un nouveau message</a>
+                </div>
                 <table id="history-list" class="table table-hover table-bordered">
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Date</th>
                             <th>Nom</th>
                             <th>Lien avec le bénéficiaire</th>
@@ -53,6 +43,9 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>
+                                <a href="#modal-info" data-toggle="modal"><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
                             <td>
                                 <a href="#modal-info" data-toggle="modal"><p>02/12</p></a>
                             </td>
@@ -65,6 +58,9 @@
                         </tr>
                         <tr>
                             <td>
+                                <a href="#modal-info" data-toggle="modal"><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
+                            <td>
                                 <a href="#modal-info" data-toggle="modal"><p>03/12</p></a>
                             </td>
                             <td>
@@ -75,6 +71,9 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                <a href="#modal-info" data-toggle="modal"><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
                             <td>
                                 <a href="#modal-info" data-toggle="modal"><p>04/12</p></a>
                             </td>
@@ -87,6 +86,9 @@
                         </tr>
                         <tr class="danger">
                             <td>
+                                <a href="#modal-info" data-toggle="modal"><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
+                            <td>
                                 <a href="#modal-info" data-toggle="modal"><p>05/12</p></a>
                             </td>
                             <td>
@@ -98,6 +100,9 @@
                         </tr>
                         <tr class="danger">
                             <td>
+                                <a href="#modal-info" data-toggle="modal"><i class="glyphicon glyphicon-plus-sign"></i></a>
+                            </td>
+                            <td>
                                 <a href="#modal-info" data-toggle="modal"><p>06/12</p></a>
                             </td>
                             <td>
@@ -107,37 +112,16 @@
                                 <a href="#modal-info" data-toggle="modal"><p>AD</p></a>
                             </td>
                         </tr>
-                        <tr class="empty">
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                            <td><a href="#modal-new" data-toggle="modal"></a></td>
-                        </tr>
                     </tbody>
                 </table>
             </section>
             <footer id="app-footer">
-                <h5><a href="/pages/session.html" class="btn btn-default pull-left">Retour</a></h5>
-                <p>♥ from SIC-UxD</p>
+                <div>
+                    <p>
+                        <a href="/pages/session.html" class="btn btn-sm btn-default force-left stop-session-link" data-stop="timer"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <span>Hygie Application</span>
+                    </p>
+                </div>
             </footer>
         </div>
         <section id="app-modals">
@@ -199,41 +183,31 @@ Nauséeux
                         </header>
                         <div class="modal-body">
                             <form id="form-new-line" action="#" role="form">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" data-field-name="hasWokenUp">
-                                            Lever
-                                    </label>
+                                <div class="form-group checkbox">
+                                    <label><input type="checkbox" data-field-name="hasWokenUp"> Lever</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" data-field-name="hasBeenGroomed">
-                                            Toilette
-                                    </label>
+                                <div class="form-group checkbox">
+                                    <label><input type="checkbox" data-field-name="hasBeenGroomed"> Toilette</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" data-field-name="isShoppingDone">
-                                            Courses
-                                    </label>
+                                <div class="form-group checkbox">
+                                    <label><input type="checkbox" data-field-name="isShoppingDone"> Courses</label>
                                 </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" data-field-name="hasHadBreakfast">
-                                            Petit Déjeuner
-                                    </label>
+                                <div class="form-group checkbox">
+                                    <label><input type="checkbox" data-field-name="hasHadBreakfast"> Petit Déjeuner</label>
                                 </div>
-                                <div>
-                                    <label>Commentaires</label>
-                                    <textarea class="form-control" rows="3" data-field-name="comments"></textarea>
+                                <div class="form-group">
+                                    <label for="comments">Commentaires</label>
+                                    <textarea class="form-control" rows="3" id="comments" data-field-name="comments"></textarea>
                                 </div>
-                                <div class="link-wrapper">
+                                <div class="form-group">
                                     <input type="submit" class="btn btn-success" name="submit" value="Ajouter au cahier">
                                 </div>
                             </form>
                         </div>
                         <footer class="modal-footer">
-                            <a href="#" class="btn btn-primary" data-dismiss="modal">Fermer</a>
+                            <div class="link-wrapper">
+                                <a class="btn btn-danger pull-right" data-dismiss="modal">Annuler</a>
+                            </div>
                         </footer>
                     </div>
                 </div>
@@ -241,7 +215,7 @@ Nauséeux
         </section>
         <script src="/scripts/4b31fe14.vendor.min.js"></script>
         <script src="/scripts/20bdd8fe.bootstrap.min.js"></script>
-        <script src="/scripts/8c42c5e6.form-book.min.js"></script>
+        <script src="/scripts/67135dd4.form-book.min.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
