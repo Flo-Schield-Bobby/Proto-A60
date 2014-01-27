@@ -39,30 +39,28 @@
                             <th>Bénéficiaire</th>
                             <th>Date</th>
                             <th>Objet</th>
-                            <th>Respondable de service</th>
-                            <th>Responsable de qualité</th>
+                            <th>Etat d'avancement</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <a href='#benef-fiches' data-toggle='modal'><p>Marianne Bourgeon</p></a>
+                                <p>Marianne Bourgeon</p>
                             </td>
                             <td>
-                                <p>02/12</p>
+                                <p>18/11</p>
                             </td>
                             <td>
                                 <a href='#modal-infos' data-toggle='modal'><p>Toilettes</p></a>
                             </td>
                             <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-ok'></i></a>
-                            </td>
-                            <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-eye-close'></i></a>
+                                <a href='#modal-icon-ok' data-toggle='modal'><i class='glyphicon glyphicon-ok text-success'></i></a>
                             </td>
                         </tr>
                         <tr>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Jeanne Girard</p></a></td>
+                            <td>
+                                <p>Jeanne Girard</p>
+                            </td>
                             <td>
                                 <p>02/12</p>
                             </td>
@@ -70,55 +68,49 @@
                                 <a href='#modal-infos' data-toggle='modal'><p>Demande d'un tapis anti-dérapant</p></a>
                             </td>
                             <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-eye-open'></i></a>
-                            </td>
-                            <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-eye-close'></i></a>
+                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-remove text-danger'></i></a>
                             </td>
                         </tr>
                         <tr>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Hervé Girard</p></a></td>
                             <td>
-                                <p>02/12</p>
+                                <p>Hervé Girard</p>
+                            </td>
+                            <td>
+                                <p>08/12</p>
                             </td>
                             <td>
                                 <a href='#modal-infos' data-toggle='modal'><p>Communication avec le médecin</p></a>
                             </td>
                             <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-remove'></i></a>
-                            </td>
-                            <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-remove'></i></a>
+                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-remove text-danger'></i></a>
                             </td>
                         </tr>
                         <tr>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Farida Kader</p></a></td>
                             <td>
-                                <p>02/12</p>
+                                <p>Farida Kader</p>
+                            </td>
+                            <td>
+                                <p>14/12</p>
                             </td>
                             <td>
                                 <a href='#modal-infos' data-toggle='modal'><p></p></a>
                             </td>
                             <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-eye-close'></i></a>
-                            </td>
-                            <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-refresh'></i></a>
+                                <a href='#modal-icon-ok' data-toggle='modal'><i class='glyphicon glyphicon-ok text-success'></i></a>
                             </td>
                         </tr>
                         <tr>
-                            <td><a href='#benef-fiches' data-toggle='modal'><p>Bernard Belin</p></a></td>
                             <td>
-                                <p>02/12</p>
+                                <p>Bernard Belin</p>
+                            </td>
+                            <td>
+                                <p>07/01</p>
                             </td>
                             <td>
                                 <a href='#modal-infos' data-toggle='modal'><p></p></a>
                             </td>
                             <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-ok'></i></a>
-                            </td>
-                            <td>
-                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-refresh'></i></a>
+                                <a href='#modal-icon' data-toggle='modal'><i class='glyphicon glyphicon-remove text-danger'></i></a>
                             </td>
                         </tr>
                     </tbody>
@@ -134,141 +126,6 @@
             </footer>
         </div>
         <section id='app-modals'>
-            <div id='benef-fiches' class='modal fade' role='dialog'>
-                <div class='modal-dialog'>
-                    <div class='modal-content'>
-                        <header class='modal-header'>
-                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
-                            <h4>Fiches</h4>
-                        </header>
-                        <div class='modal-body'>
-                            <table id='history-list' class='table table-hover table-bordered'>
-                                <thead>
-                                    <tr>
-                                        <th>Salarié</th>
-                                        <th>Bénéficiaire</th>
-                                        <th>Date</th>
-                                        <th>Objet</th>
-                                        <th>Respondable de service</th>
-                                        <th>Responsable de qualité</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class='dropdown'>
-                                                <a data-toggle='dropdown' href='#'>Jean Pousy</a>
-                                                <ul class='dropdown-menu' role='menu' aria-labelledby='dLabel'>
-                                                    <li>Julien Pousy</li>
-                                                    <li>Cuisine - Aménagement</li>
-                                                    <li><i class='glyphicon glyphicon-earphone'></i> 06 29 89 48 10</li>
-                                                    <li><i class='glyphicon glyphicon-envelope'></i> julien.pousy@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p>Hervé Girard</p>
-                                        </td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <p>Toilettes</p>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-ok'></i>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-eye-close'></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class='dropdown'>
-                                                <a data-toggle='dropdown' href='#'>Natalie Dufour</a>
-                                                <ul class='dropdown-menu' role='menu' aria-labelledby='dLabel'>
-                                                    <li>Natalie Dufour</li>
-                                                    <li>Salle de bain - Aménagement</li>
-                                                    <li><i class='glyphicon glyphicon-earphone'></i> 06 29 90 38 30</li>
-                                                    <li><i class='glyphicon glyphicon-envelope'></i> natalie.dufour@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>Hervé Girard</td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <p>Demande d'un tapis anti-dérapant</p>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-eye-close'></i>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-refresh'></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class='dropdown'>
-                                                <a data-toggle='dropdown' href='#'>Melanie Dupuis</a>
-                                                <ul class='dropdown-menu' role='menu' aria-labelledby='dLabel'>
-                                                    <li>Melanie Dupuis</li>
-                                                    <li>Cuisine - Aménagement</li>
-                                                    <li><i class='glyphicon glyphicon-earphone'></i> 06 29 80 48 20</li>
-                                                    <li><i class='glyphicon glyphicon-envelope'></i> melanie.dupuis@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>Hervé Girard</td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <p>Communication avec le médecin</p>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-remove'></i>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-eye-open'></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class='dropdown'>
-                                                <a data-toggle='dropdown' href='#'>Remy Froisse</a>
-                                                <ul class='dropdown-menu' role='menu' aria-labelledby='dLabel'>
-                                                    <li>Remy Froisse</li>
-                                                    <li>Salle de bain - Aménagement</li>
-                                                    <li><i class='glyphicon glyphicon-earphone'></i> 06 29 80 48 20</li>
-                                                    <li><i class='glyphicon glyphicon-envelope'></i> remy.froisse@gmail.com</li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                        <td>Hervé Girard</td>
-                                        <td>
-                                            <p>02/12</p>
-                                        </td>
-                                        <td>
-                                            <p></p>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-eye-close'></i>
-                                        </td>
-                                        <td>
-                                            <i class='glyphicon glyphicon-refresh'></i>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <footer class='modal-footer'>
-                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Revenir aux fiches</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
             <div id='modal-new' class='modal fade' role='dialog'>
                 <div class='modal-dialog'>
                     <div class='modal-content'>
@@ -334,6 +191,45 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>05/02</td>
+                                        <td>Lu par Mme Flipon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>07/02</td>
+                                        <td>Validé par Mme Flipon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12/02</td>
+                                        <td>Transmission en attente</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <footer class='modal-footer'>
+                            <i class='glyphicon glyphicon-earphone pull-left'></i>  
+                            <i class='glyphicon glyphicon-envelope pull-left'></i>
+                            <a href='#' class='btn btn-primary' data-dismiss='modal'>Fermer</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div id='modal-icon-ok' class='modal fade' role='dialog'>
+                <div class='modal-dialog'>
+                    <div class='modal-content'>
+                        <header class='modal-header'>
+                            <a href='#' class='close' data-dismiss='modal' aria-hidden='true'>&times;</a>
+                            <h4>Intervention</h4>
+                        </header>
+                        <div class='modal-body'>
+                            <table id='history-list' class='table table-hover table-bordered'>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Statut</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
                                         <td>18/02</td>
                                         <td>Lu par Mme Flipon</td>
                                     </tr>
@@ -343,7 +239,7 @@
                                     </tr>
                                     <tr>
                                         <td>22/02</td>
-                                        <td>Formulaire transmis à l'EHPAD</td>
+                                        <td>Formulaire transmis</td>
                                     </tr>
                                 </tbody>
                             </table>
