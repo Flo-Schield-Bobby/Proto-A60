@@ -52,6 +52,9 @@ html {
                     padding: 0;
                 }
             }
+            &.sided {
+                padding: 0 10px;
+            }
         }
         #personnal-menu {
             background: $personnal-menu-background;
@@ -124,6 +127,11 @@ html {
             }
             #qr-code-canvas {
                 display: none;
+            }
+            #qrcode {
+                display: block;
+                @include square(200px);
+                margin: 0 auto;
             }
             .white {
                 overflow:hidden;
@@ -210,17 +218,41 @@ html {
             }
             #gps {
                 width: 100%;
-                min-height: 700px;
-            }
-            .avatar {
-                background:#ccc;
-                width:100%;
-                height:140px;
+                min-height: 400px;
             }
             .message {
                 background:#FFF;
                 padding:20px 20px 10px;
                 margin: 10px 40px;
+                hr {
+                    margin: 10px 0;
+                }
+                .avatar {
+                    display: block;
+                    background: $sun-flower;
+                    @include square(50px);
+                    margin: auto;
+                }
+                &.admin {
+                    .avatar {
+                        background: $turquoise;
+                    }
+                }
+                .message-title {
+                    margin: 5px auto;
+                    color: $midnight-blue;
+                }
+                .message-date {
+                    margin: 5px auto;
+                    font-size: 12px;
+                    font-style: italic;
+                }
+                .message-text {
+                    margin: 5px 0;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    line-height: 14px;
+                }
             }
             .TMS-wrapper {
                 figcaption {
